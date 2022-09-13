@@ -13,7 +13,7 @@ public class AdminPage extends BasePage {
         $(By.name("email")).shouldBe(Condition.visible).setValue(email);
         $(By.name("password")).shouldBe(Condition.visible).setValue(password);
         if (remember) {
-            $(".icheckbox_square-blue").click();
+            $(By.name("remember")).parent().click();
         }
         $("[type=\"submit\"]").click();
         return page(AdminPage.class);

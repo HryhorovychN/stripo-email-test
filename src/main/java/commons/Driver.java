@@ -45,7 +45,7 @@ public class Driver {
 
     public static void waitForUrlDoesNotContain(String urlChunk) {
         int maxTime = 20;
-        while(  currentDriver().getCurrentUrl().contains(urlChunk)  && maxTime > 0) {
+        while(  currentDriver().getCurrentUrl().contains(urlChunk) && maxTime > 0) {
             wait(1);
             maxTime--;
         }
