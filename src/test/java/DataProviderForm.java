@@ -7,7 +7,7 @@ public class DataProviderForm {
     public static Object[][] esputnikForm() {
         String email;
         return new Object[][] {
-                {User.getInvalidEmail(), "Please enter a valid email address"},
+                {User.getInvalidEmail(), "Need a valid email"},
                 {email = User.getValidTestEmail(), String.format("Check your inbox %s", email)}
         };
     }

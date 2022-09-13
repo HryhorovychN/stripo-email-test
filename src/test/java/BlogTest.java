@@ -55,7 +55,7 @@ public class BlogTest extends BaseTest {
     public Object[][] keyWord() {
         return new Object[][]{
                 {EN, "Black Friday"},
-                {RU, "День отца"}
+                {RU, "Дизайн"}
         };
     }
 
