@@ -9,7 +9,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 public class RunnerConfig {
 
     public void setUpConfig(String browser, String browserVersion) {
-        boolean modeDebug = false;
+        boolean modeDebug = true;
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.startMaximized = true;
