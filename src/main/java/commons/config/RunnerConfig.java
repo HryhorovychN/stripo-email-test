@@ -24,11 +24,12 @@ public class RunnerConfig {
             Configuration.browserVersion = browserVersion;
         }
         if (!modeDebug) {
-            Configuration.remote = "http://localhost:4444/wd/hub";
-            Configuration.browserCapabilities = new DesiredCapabilities();
+//            Configuration.remote = "http://localhost:4444/wd/hub";
+//            Configuration.browserCapabilities = new DesiredCapabilities();
 //            Configuration.browserCapabilities.setCapability("enableVNC", false);
 //            Configuration.browserCapabilities.setCapability("enableVideo", false);
             Configuration.driverManagerEnabled = false;
+            Configuration.browser = CustomProvider.class.getName();
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
