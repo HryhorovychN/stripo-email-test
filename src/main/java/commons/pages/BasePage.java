@@ -99,6 +99,7 @@ public class BasePage {
     }
 
     public BasePage uploadListFile(List<File> file) {
+        executeJavaScript("window.scrollBy(0,900)", "");
         for (File testFile: file) {
             $("[type='file']")
                     .should(Condition.exist)
