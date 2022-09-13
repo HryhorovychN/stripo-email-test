@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+    tools {maven 'Maven'}
+
+    stages {
+        stage('Git checkout') {
+            steps {
+                git credentialsId: 'HryhorovychN',
+                    branch: 'master',
+                    url: 'https://github.com/HryhorovychN/stripo.email-e2e-project.git'
+            }
+        }
+        stage('Clean') {
+            steps {
+				catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+					sh 'docker stop selenoid'
+				}
+				catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+					sh 'docker rm selenoid'
+				}
+				catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+					sh 'rm /var/lib/jenkins/.aerokube/selenoid/browsers.json'
+				}
+            }
+        }
+		stage('Update') {
+            steps {
+                sh 'docker pull selenoid/chrome'
+            }
+        }
+        stage('Start') {
+            steps {
+                sh 'chmod +x src/test/resources/selenoid_manager/cm'
+				sh 'src/test/resources/selenoid_manager/cm selenoid start'
+            }
+        }
+        stage('Check') {
+            steps {
+                sh 'src/test/resources/selenoid_manager/cm selenoid status'
+				sh 'curl http://localhost:4444/status'
+            }
+        }
+    }
+}
