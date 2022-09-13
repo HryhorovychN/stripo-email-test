@@ -5,11 +5,12 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import commons.logger.CustomLogger;
 import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class RunnerConfig {
 
     public void setUpConfig(String browser, String browserVersion) {
-        boolean modeDebug = true;
+        boolean modeDebug = false;
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.startMaximized = true;
@@ -24,8 +25,9 @@ public class RunnerConfig {
         }
         if (!modeDebug) {
             Configuration.remote = "http://localhost:4444/wd/hub";
-            Configuration.browserCapabilities.setCapability("enableVNC", false);
-            Configuration.browserCapabilities.setCapability("enableVideo", false);
+            Configuration.browserCapabilities = new DesiredCapabilities();
+//            Configuration.browserCapabilities.setCapability("enableVNC", false);
+//            Configuration.browserCapabilities.setCapability("enableVideo", false);
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
