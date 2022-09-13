@@ -15,7 +15,7 @@ public class App {
     public static final String STAGING_BASE_URL = "https://staging.stripo.email/";
     public static final String LIVE_BASE_URL = "https://stripo.email/";
 
-    public static String baseUrl = LIVE_BASE_URL;
+    public static String baseUrl = STAGING_BASE_URL;
 
     /* Site pages */
 
