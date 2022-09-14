@@ -1,6 +1,8 @@
 
+import com.codeborne.selenide.WebDriverProvider;
 import commons.App;
 import commons.Driver;
+import commons.config.CustomProvider;
 import commons.config.RunnerConfig;
 import commons.listeners.TestListener;
 import lombok.extern.apachecommons.CommonsLog;
@@ -40,13 +42,14 @@ public class BaseTest extends TestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        config.setUpConfig(browser, browserVersion);
+        config.setUpConfig(browser, browserVersion, getBrowserProvider(browser));
         app = new App();
         softAssert = new SoftAssert();
         logger = LogManager.getLogger("");
 
         DOMConfigurator.configure("src/main/resources/log4j.xml");
     }
+
 
     @AfterMethod
     public void clearCookie() {
@@ -58,6 +61,16 @@ public class BaseTest extends TestListener {
     public void tearDown() {
         Driver.clearCookies();
         Driver.close();
+    }
+
+    private Class<? extends WebDriverProvider> getBrowserProvider(String browserName) {
+        switch (browserName) {
+            case "Chrome":
+                return CustomProvider.class;
+
+            default: return CustomProvider.class;
+        }
+
     }
 
 }
