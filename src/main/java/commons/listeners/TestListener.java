@@ -4,7 +4,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import static commons.Driver.getBrowserLogs;
 import static commons.logger.CustomLogger.logger;
 
 public class TestListener implements ITestListener {
@@ -23,7 +22,6 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         logger.info("Test failed!");
         logger.info(result.getThrowable().getMessage() + "\n");
-        logger.info("Browser log: " + getBrowserLogs());
     }
 
     @Override

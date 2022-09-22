@@ -23,7 +23,7 @@ public class BaseTest extends TestListener {
     protected final RunnerConfig config = new RunnerConfig();
 
 
-    @Parameters({"BROWSER"})
+    @Parameters({"browser", "browserVersion"})
     @BeforeClass
     public void setUp(@Optional("BROWSER") String browser) {
         try {
