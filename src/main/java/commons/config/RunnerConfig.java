@@ -16,7 +16,7 @@ import java.net.URL;
 public class RunnerConfig {
 
 
-    public void setUpConfig(String browser, String browserVersion) {
+    public void setUpConfig(String browser) {
         //remote == false
         boolean locale = false;
 
@@ -30,9 +30,7 @@ public class RunnerConfig {
         Configuration.browser = browser;
 
         if (!locale) {
-            if (browserVersion != null) {
-                Configuration.browserVersion = browserVersion;
-            }
+
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             Configuration.browserCapabilities = desiredCapabilities;
             Configuration.browserCapabilities.setCapability("enableVNC", false);
