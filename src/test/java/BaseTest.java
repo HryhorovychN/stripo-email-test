@@ -25,7 +25,7 @@ public class BaseTest extends TestListener {
 
     @Parameters({"browser", "browserVersion"})
     @BeforeClass
-    public void setUp(@Optional("BROWSER") String browser) {
+    public void setUp(@Optional("Chrome") String browser, @Optional String browserVersion) {
         try {
             HttpURLConnection connection;
             connection = (HttpURLConnection) new URL(App.STAGING_BASE_URL).openConnection();
@@ -40,7 +40,7 @@ public class BaseTest extends TestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        config.setUpConfig("${BROWSER}");
+        config.setUpConfig(browser, browserVersion);
         app = new App();
         softAssert = new SoftAssert();
         logger = LogManager.getLogger("");

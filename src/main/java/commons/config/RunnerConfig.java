@@ -6,19 +6,11 @@ import commons.logger.CustomLogger;
 import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class RunnerConfig {
 
-
-    public void setUpConfig(String browser) {
-        //remote == false
-        boolean locale = false;
+    public void setUpConfig(String browser, String browserVersion) {
+        boolean modeDebug = false;
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.startMaximized = true;
@@ -28,22 +20,16 @@ public class RunnerConfig {
         Configuration.screenshots = true;
         Configuration.timeout = 10000;
         Configuration.browser = browser;
-
-        if (!locale) {
-
-            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-            Configuration.browserCapabilities = desiredCapabilities;
-            Configuration.browserCapabilities.setCapability("enableVNC", false);
-            Configuration.browserCapabilities.setCapability("enableVideo", false);
-            desiredCapabilities.setBrowserName(browser);
-            desiredCapabilities.setAcceptInsecureCerts(true);
-            try {
-                new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities);
-                return;
-            } catch (final MalformedURLException e) {
-                throw new RuntimeException("Unable to create driver", e);
-            }
-
+        if (browserVersion != null) {
+            Configuration.browserVersion = browserVersion;
+        }
+        if (!modeDebug) {
+//            Configuration.remote = "http://localhost:4444/wd/hub";
+//            Configuration.browserCapabilities = new DesiredCapabilities();
+//            Configuration.browserCapabilities.setCapability("enableVNC", false);
+//            Configuration.browserCapabilities.setCapability("enableVideo", false);
+            Configuration.driverManagerEnabled = false;
+            Configuration.browser = CustomProvider.class.getName();
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
