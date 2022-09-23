@@ -25,7 +25,7 @@ public class BaseTest extends TestListener {
 
     @Parameters({"${BROWSER}"})
     @BeforeClass
-    public void setUp(String browser) {
+    public void setUp(@Optional("Chrome") String browser) {
         try {
             HttpURLConnection connection;
             connection = (HttpURLConnection) new URL(App.STAGING_BASE_URL).openConnection();
