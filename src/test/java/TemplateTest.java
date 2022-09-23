@@ -15,6 +15,7 @@ import static commons.data.dataPage.TemplateType.PREMIUM;
 
 public class TemplateTest extends BaseTest {
 
+    @Override
     public void clearCookie() {
     }
 

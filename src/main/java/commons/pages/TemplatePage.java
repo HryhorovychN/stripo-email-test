@@ -1,5 +1,6 @@
 package commons.pages;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -74,6 +75,7 @@ public class TemplatePage extends BasePage {
     }
 
     public TemplatePage closeItemCategory(String categoryName) {
+        $$(".template__filters-item").get(0).shouldBe(Condition.visible);
         $$(".template__filters-item")
                 .findBy(Condition.text(categoryName))
                 .find(".template__filters-item-close")
@@ -82,7 +84,7 @@ public class TemplatePage extends BasePage {
     }
 
     public TemplatePage closeAllItemCategory() {
-        $(".template__filters-closeall")
+        $(".template__filters-closeall").shouldBe(Condition.visible)
                 .click();
         return this;
     }

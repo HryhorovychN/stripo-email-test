@@ -37,7 +37,7 @@ public class BlogTest extends BaseTest {
     @DataProvider(name = "categoryFilter")
     public Object[][] ArticleCategories() {
         return new Object[][]{
-                {EN, List.of(DESIGN, TEMPLATES, AMP)},
+                {EN, List.of(TEMPLATES, AMP)},
                 {EN, List.of(MARKETING, STRUCTURE)}
         };
     }
