@@ -25,7 +25,7 @@ public class RunnerConfig {
 //            Configuration.browserCapabilities.setCapability("enableVNC", false);
 //            Configuration.browserCapabilities.setCapability("enableVideo", false);
             Configuration.driverManagerEnabled = false;
-            Configuration.browser = browser;
+            Configuration.browser = FirefoxProvider.class.getName();
 
 
 
