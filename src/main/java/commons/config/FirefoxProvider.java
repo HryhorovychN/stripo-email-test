@@ -10,9 +10,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class FirefoxProvider extends DesiredCapabilities {
+public class FirefoxProvider implements WebDriverProvider {
 
-    public WebDriver createFirefoxDriver(DesiredCapabilities capabilities) {
+    @Override
+    public WebDriver createDriver(DesiredCapabilities capabilities) {
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setAcceptInsecureCerts(true);
         firefoxOptions.merge(capabilities);

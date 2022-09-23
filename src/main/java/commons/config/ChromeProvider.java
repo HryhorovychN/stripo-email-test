@@ -9,9 +9,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class ChromeProvider extends DesiredCapabilities {
+public class ChromeProvider implements WebDriverProvider {
 
-    public WebDriver createChromeDriver(DesiredCapabilities capabilities) {
+    @Override
+    public WebDriver createDriver(DesiredCapabilities capabilities) {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
         chromeOptions.merge(capabilities);
