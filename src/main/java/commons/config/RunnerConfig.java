@@ -32,8 +32,6 @@ public class RunnerConfig {
                 Configuration.browser = ChromeProvider.class.getName();
             }
 
-
-
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));

@@ -41,9 +41,9 @@ public class BaseTest extends TestListener {
         logger.info("Connection success");
     }
 
+    @Parameters({"BROWSER"})
     @BeforeClass
-    public void setUp() {
-        String browser = System.getenv("BROWSER");
+    public void setUp(String browser) {
         testConnection();
         config.setUpConfig(browser);
         app = new App();
