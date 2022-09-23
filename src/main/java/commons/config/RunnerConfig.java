@@ -29,7 +29,7 @@ public class RunnerConfig {
 //            Configuration.browserCapabilities.setCapability("enableVNC", false);
 //            Configuration.browserCapabilities.setCapability("enableVideo", false);
             Configuration.driverManagerEnabled = false;
-            Configuration.browser = ChromeProvider.class.getName();
+            Configuration.browser = CustomProvider.class.getName();
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
