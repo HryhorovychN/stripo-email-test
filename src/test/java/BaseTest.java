@@ -3,7 +3,6 @@ import commons.App;
 import commons.Driver;
 import commons.config.RunnerConfig;
 import commons.listeners.TestListener;
-import commons.logger.CustomLogger;
 import lombok.extern.apachecommons.CommonsLog;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -23,7 +22,10 @@ public class BaseTest extends TestListener {
     protected Logger logger;
     protected final RunnerConfig config = new RunnerConfig();
 
-    private void testConnection() {
+
+    @Parameters({"browser", "browserVersion"})
+    @BeforeClass
+    public void setUp(@Optional("Chrome") String browser, @Optional String browserVersion) {
         try {
             HttpURLConnection connection;
             connection = (HttpURLConnection) new URL(App.STAGING_BASE_URL).openConnection();
@@ -38,17 +40,11 @@ public class BaseTest extends TestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        logger.info("Connection success");
-    }
-
-    @Parameters({"BROWSER"})
-    @BeforeClass
-    public void setUp(String browser) {
-        testConnection();
-        config.setUpConfig(browser);
+        config.setUpConfig(browser, browserVersion);
         app = new App();
         softAssert = new SoftAssert();
         logger = LogManager.getLogger("");
+
         DOMConfigurator.configure("src/main/resources/log4j.xml");
     }
 
