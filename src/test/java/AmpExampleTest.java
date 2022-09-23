@@ -24,7 +24,7 @@ public class AmpExampleTest extends BaseTest {
                 .checkSubscribeFormMessage(message);
     }
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "esputnikSubscribeForm", priority = 2)
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "esputnikGamificationForm", priority = 2)
     public void sendGamificationForm(String email, String message) {
 
         App
