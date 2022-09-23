@@ -2,10 +2,9 @@ package commons.config;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import commons.logger.CustomLogger;
-import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.openqa.selenium.remote.DesiredCapabilities;
+
+import static commons.logger.CustomLogger.logger;
 
 public class RunnerConfig {
 
@@ -29,12 +28,20 @@ public class RunnerConfig {
 //            Configuration.browserCapabilities.setCapability("enableVNC", false);
 //            Configuration.browserCapabilities.setCapability("enableVideo", false);
             Configuration.driverManagerEnabled = false;
+            getProvider(browser);
             Configuration.browser = FirefoxProvider.class.getName();
+            logger.info("Remote browser is starting");
         }
 
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
-                .screenshots(true)
-                .savePageSource(true));
-        CustomLogger.logger.info("ok");
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+    }
+
+    private void getProvider(String browser) {
+        switch (browser) {
+            case "firefox":
+                Configuration.browser = FirefoxProvider.class.getName();
+            case "chrome":
+                Configuration.browser = ChromeProvider.class.getName();
+        }
     }
 }

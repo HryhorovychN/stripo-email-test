@@ -22,10 +22,7 @@ public class BaseTest extends TestListener {
     protected Logger logger;
     protected final RunnerConfig config = new RunnerConfig();
 
-
-    @Parameters({"browser", "browserVersion"})
-    @BeforeClass
-    public void setUp(@Optional("Chrome") String browser, @Optional String browserVersion) {
+    private void testConnections() {
         try {
             HttpURLConnection connection;
             connection = (HttpURLConnection) new URL(App.STAGING_BASE_URL).openConnection();
@@ -40,6 +37,12 @@ public class BaseTest extends TestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Parameters({"BROWSER"})
+    @BeforeClass
+    public void setUp(@Optional("chrome") String browser, @Optional String browserVersion) {
+        testConnections();
         config.setUpConfig(browser, browserVersion);
         app = new App();
         softAssert = new SoftAssert();
