@@ -8,7 +8,7 @@ import static commons.logger.CustomLogger.logger;
 
 public class RunnerConfig {
 
-    public void setUpConfig(String browser, String browserVersion) {
+    public void setUpConfig(String browser) {
         boolean modeDebug = false;
 
         Configuration.pageLoadStrategy = "eager";
@@ -19,9 +19,7 @@ public class RunnerConfig {
         Configuration.screenshots = true;
         Configuration.timeout = 10000;
         Configuration.browser = browser;
-        if (browserVersion != null) {
-            Configuration.browserVersion = browserVersion;
-        }
+
         if (!modeDebug) {
 //            Configuration.remote = "http://localhost:4444/wd/hub";
 //            Configuration.browserCapabilities = new DesiredCapabilities();

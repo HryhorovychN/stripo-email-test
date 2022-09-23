@@ -41,9 +41,9 @@ public class BaseTest extends TestListener {
 
     @Parameters({"BROWSER"})
     @BeforeClass
-    public void setUp(@Optional("chrome") String browser, @Optional String browserVersion) {
+    public void setUp(@Optional("chrome") String browser) {
         testConnections();
-        config.setUpConfig(browser, browserVersion);
+        config.setUpConfig(browser);
         app = new App();
         softAssert = new SoftAssert();
         logger = LogManager.getLogger("");
