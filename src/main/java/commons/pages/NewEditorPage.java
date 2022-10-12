@@ -82,6 +82,7 @@ public class NewEditorPage extends BasePage {
 
     public NewEditorPage scrollBy(String y) {
         executeJavaScript(String.format("window.scrollBy(0,%s)", y));
+        sleep(3000);
         return this;
     }
 
