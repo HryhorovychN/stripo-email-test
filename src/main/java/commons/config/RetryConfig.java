@@ -1,10 +1,10 @@
 package commons.config;
 
+import lombok.extern.apachecommons.CommonsLog;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-import static commons.logger.CustomLogger.logger;
-
+@CommonsLog
 public class RetryConfig implements IRetryAnalyzer {
     private int retryCount = 1;
 
@@ -13,7 +13,7 @@ public class RetryConfig implements IRetryAnalyzer {
         int maxRetryCount = 1;
         if (retryCount <= maxRetryCount) {
             if (result.getStatus() == 2) {
-                logger.info("Retrying test: " + result.getName());
+                log.info("Retrying test: " + result.getName());
                 retryCount++;
                 return true;
             }

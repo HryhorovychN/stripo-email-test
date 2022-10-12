@@ -4,7 +4,7 @@ import commons.data.dataPage.PluginDto;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
-import static commons.data.dataPage.Locale.EN;
+import static commons.data.dataPage.Lang.EN;
 
 public class PluginTest extends BaseTest {
 
@@ -29,7 +29,7 @@ public class PluginTest extends BaseTest {
                         "We will contact you in 3 business days.");
     }
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForSubscribeForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
     @Description("This test verify sent subscribe form with valid data")
     public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
         App
@@ -38,7 +38,7 @@ public class PluginTest extends BaseTest {
                 .checkSubscribeFormMessage(message);
     }
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForSubscribeForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
     @Description("This test verify sent subscribe form with invalid data")
     public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
         App

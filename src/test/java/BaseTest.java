@@ -16,20 +16,19 @@ import java.net.URL;
 
 @CommonsLog
 public class BaseTest extends TestListener {
-
     protected App app;
     protected SoftAssert softAssert;
-    protected Logger logger;
     protected final RunnerConfig config = new RunnerConfig();
 
     private void testConnections() {
         try {
             HttpURLConnection connection;
-            connection = (HttpURLConnection) new URL(App.STAGING_BASE_URL).openConnection();
+            connection = (HttpURLConnection) new URL(App.baseUrl).openConnection();
             connection.setRequestMethod("GET");
             connection.connect();
             if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                logger.error(connection.getResponseMessage() + connection.getErrorStream());
+                log.error("Connection status: " + connection.getURL()+ " " + connection.getResponseMessage());
+                System.out.println("Connection status: " + connection.getURL() + " " + connection.getResponseMessage());
                 connection.disconnect();
                 Driver.close();
             }
@@ -46,7 +45,6 @@ public class BaseTest extends TestListener {
         config.setUpConfig(browser);
         app = new App();
         softAssert = new SoftAssert();
-        logger = LogManager.getLogger("");
 
         DOMConfigurator.configure("src/main/resources/log4j.xml");
     }

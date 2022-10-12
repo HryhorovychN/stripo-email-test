@@ -1,8 +1,9 @@
 import commons.App;
 import commons.data.User;
-import commons.data.dataPage.Locale;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import static commons.data.dataPage.Lang.EN;
 
 public class CustomerStoriesTest extends BaseTest {
 
@@ -18,7 +19,7 @@ public class CustomerStoriesTest extends BaseTest {
     @Test(dataProvider = "сustomerStoriesForm")
     public void sendCustomerStoriesForm(String name, String email, boolean expectedStatus, String... messages) {
         App
-                .openCustomerStoriesPage(Locale.EN)
+                .openCustomerStoriesPage(EN)
                 .sendCustomerStoriesForm(name, email)
                 .checkCustomerStoriesFormMessage(expectedStatus, messages);
     }
@@ -26,7 +27,7 @@ public class CustomerStoriesTest extends BaseTest {
     @Test
     public void checkCarouselControls() {
         App
-                .openCustomerStoriesPage(Locale.EN)
+                .openCustomerStoriesPage(EN)
                 .checkCommentEnabled("I've been working in Mailchimp for a long time", true)
                 .clickNextSlide()
                 .checkCommentEnabled("I've been working in Mailchimp for a long time", false)

@@ -21,18 +21,33 @@ public class DataProviderForm {
         };
     }
 
-    @DataProvider(name = "validDataForSubscribeForm")
-    public static Object[][] baseSubscribeFormValidData() {
+    @DataProvider(name = "validDataForEmailForm")
+    public static Object[][] validDataForEmailForm() {
         return new Object[][] {
                 {User.getValidTestEmail(), "Thanks! You're subscribed, look for a confirmation email shortly."},
         };
     }
 
-    @DataProvider(name = "invalidDataForSubscribeForm")
-    public static Object[][] baseSubscribeFormInvalidData() {
+    @DataProvider(name = "invalidDataForEmailForm")
+    public static Object[][] invalidDataForEmailForm() {
         return new Object[][] {
-                {User.getInvalidEmail(), "Please enter a valid email address"},
-                {"", "This action is unauthorized"}
+                {User.getInvalidEmail(), "Please enter a valid email address"}
+        };
+    }
+
+    @DataProvider(name = "validDataForNewSubscribeForm")
+    public static Object[][] validDataForNewSubscribeForm() {
+        return new Object[][] {
+                {User.getValidTestEmail(), "THANKS FOR SUBSCRIBE"},
+                {"support@stripo.email", "YOU’RE ALREADY SUBSCRIBED"}
+        };
+    }
+
+    @DataProvider(name = "invalidDataForNewSubscribeForm")
+    public static Object[][] invalidDataForNewSubscribeForm() {
+        return new Object[][] {
+                {User.getInvalidEmail(), "Email is invalid"},
+                {"", "Required field"}
         };
     }
 

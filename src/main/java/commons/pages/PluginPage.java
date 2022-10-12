@@ -2,6 +2,7 @@ package commons.pages;
 
 import com.codeborne.selenide.Condition;
 import commons.data.dataPage.PluginDto;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;

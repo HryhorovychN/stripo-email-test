@@ -1,7 +1,7 @@
 package commons;
 
 import commons.data.Const;
-import commons.data.dataPage.Locale;
+import commons.data.dataPage.Lang;
 import commons.pages.*;
 import commons.pages.admin.AdminBlogPage;
 import commons.pages.admin.AdminPage;
@@ -23,36 +23,40 @@ public class App {
         return open(String.format("%s%s", baseUrl, pageUrl), classToReturn);
     }
 
-    public static <T> T openPage(Locale locale, String pageUrl, Class<T> classToReturn) {
+    public static <T> T openPage(Lang locale, String pageUrl, Class<T> classToReturn) {
         return open(String.format("%s%s%s", baseUrl, locale.getLocale(), pageUrl), classToReturn);
     }
 
-    public static BlogPage openBlogPage(Locale locale) {
+    public static BlogPage openBlogPage(Lang locale) {
         return openPage(locale, Const.BLOG, BlogPage.class);
     }
 
-    public static TemplatePage openTemplatesPage(Locale locale) {
+    public static TemplatePage openTemplatesPage(Lang locale) {
         return openPage(locale, Const.TEMPLATES, TemplatePage.class );
     }
 
-    public static HomePage openHomePage(Locale locale) {
+    public static HomePage openHomePage(Lang locale) {
         return openPage(locale, Const.HOME, HomePage.class);
     }
 
-    public static CustomerStoriesPage openCustomerStoriesPage(Locale locale) {
+    public static CustomerStoriesPage openCustomerStoriesPage(Lang locale) {
         return openPage(locale, Const.CUSTOMER_STORIES, CustomerStoriesPage.class);
     }
 
-    public static PluginPage openPluginPage(Locale locale) {
+    public static PluginPage openPluginPage(Lang locale) {
         return openPage(locale, Const.PLUGIN, PluginPage.class);
     }
 
-    public static TemplateOrderPage openTemplateOrderPage(Locale locale) {
+    public static TemplateOrderPage openTemplateOrderPage(Lang locale) {
         return openPage(locale, Const.TEMPLATE_ORDER, TemplateOrderPage.class);
     }
 
-    public static AmpExamplePage openAmpExamplePage(Locale locale) {
+    public static AmpExamplePage openAmpExamplePage(Lang locale) {
         return openPage(locale, Const.AMP_EXAMPLE, AmpExamplePage.class);
+    }
+
+    public static NewEditorPage openNewEditorPage(Lang locale) {
+        return openPage(locale, Const.NEW_EDITOR, NewEditorPage.class);
     }
 
     /* Admin pages */

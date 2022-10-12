@@ -1,22 +1,18 @@
 package commons;
 
-import com.codeborne.selenide.Browsers;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import org.apache.commons.io.FileUtils;
+import io.qameta.allure.Attachment;
 import org.openqa.selenium.*;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
-import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class Driver {
@@ -78,25 +74,30 @@ public class Driver {
         }
     }
 
-    public static void takeScreenshot() {
-
-        File scrFile = ((TakesScreenshot) currentDriver()).getScreenshotAs(OutputType.FILE);
-
-        String path = System.getProperty("user.dir")
-                + File.separator + "test-output"
-                + File.separator + "screenshots"
-                + File.separator + " " + "screenshot_" +  (new SimpleDateFormat("HHmmssSSS").format(new Date())) + ".png";
-        try {
-            FileUtils.copyFile(scrFile, new File(path));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @Attachment(value = "Screenshot", type = "image/png")
+    public static byte[] takeScreenshot() {
+        return ((TakesScreenshot) currentDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
     public static List<LogEntry> getBrowserLogs() {
         LogEntries log = currentDriver().manage().logs().get("browser");
         List<LogEntry> logList = log.getAll();
         return logList;
+    }
+
+    public static int getResponseStatus() {
+        HttpURLConnection connection;
+        int responseCode = 0;
+        try {
+            connection = (HttpURLConnection) new URL(currentDriver().getCurrentUrl()).openConnection();
+            connection.setRequestMethod("GET");
+            connection.connect();
+            connection.disconnect();
+            responseCode = connection.getResponseCode();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return responseCode;
     }
 
     // COOKIES

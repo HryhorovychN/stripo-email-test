@@ -12,7 +12,7 @@ public class User {
 
     public static String getValidTestEmail() {
         Random random = new Random();
-        return String.format("e2e_test%s@gmail.com", random.nextInt(100));
+        return String.format("e2e_test%s@gmail.com", random.nextInt(10000));
     }
 
     public static String getInvalidEmail() {

@@ -1,15 +1,19 @@
 package commons.config;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.LogEventListener;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Allure;
 import io.qameta.allure.selenide.AllureSelenide;
+import lombok.extern.apachecommons.CommonsLog;
 
-import static commons.logger.CustomLogger.logger;
+import static commons.Driver.getBrowserLogs;
 
+@CommonsLog
 public class RunnerConfig {
 
     public void setUpConfig(String browser) {
-        boolean modeDebug = false;
+        boolean modeDebug = true;
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.startMaximized = true;
@@ -17,18 +21,13 @@ public class RunnerConfig {
         Configuration.reportsFolder = "target/screenshots";
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
-        Configuration.timeout = 10000;
-        Configuration.browser = browser;
+        Configuration.timeout = 13000;
+        Configuration.browser = "chrome";
 
         if (!modeDebug) {
-//            Configuration.remote = "http://localhost:4444/wd/hub";
-//            Configuration.browserCapabilities = new DesiredCapabilities();
-//            Configuration.browserCapabilities.setCapability("enableVNC", false);
-//            Configuration.browserCapabilities.setCapability("enableVideo", false);
             Configuration.driverManagerEnabled = false;
             getProvider(browser);
-            Configuration.browser = FirefoxProvider.class.getName();
-            logger.info("Remote browser is starting");
+            log.info("Remote browser is starting");
         }
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));

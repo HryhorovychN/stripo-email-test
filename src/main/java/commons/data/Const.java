@@ -11,6 +11,8 @@ public class Const {
     public static final String PLUGIN = "/plugin";
     public static final String TEMPLATE_ORDER = "/template-order";
     public static final String AMP_EXAMPLE = "/amp-examples";
+    public static final String NEW_EDITOR = "/new";
+
 
     /* Admin pages url */
     public static final String A_ARTICLE = "/admin/article";

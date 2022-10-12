@@ -1,11 +1,10 @@
 package commons.pages;
 
-import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import commons.data.dataPage.ItemType;
-import commons.data.dataPage.Locale;
+import commons.data.dataPage.Lang;
 import commons.data.dataPage.TemplateType;
 import org.apache.commons.collections4.CollectionUtils;
 
@@ -20,7 +19,7 @@ public class TemplatePage extends BasePage {
     public ElementsCollection getPremiumTemplates() {return premiumTemplates;}
     public ElementsCollection getTemplates() {return templates;}
 
-    public TemplatePage checkOnPage(Locale locale, String expectedText) {
+    public TemplatePage checkOnPage(Lang locale, String expectedText) {
         return super.checkOnPage(locale, $("h1.text-center"), expectedText, TemplatePage.class);
     }
 
@@ -88,7 +87,6 @@ public class TemplatePage extends BasePage {
                 .click();
         return this;
     }
-
 
 }
 

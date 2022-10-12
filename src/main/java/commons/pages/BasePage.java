@@ -2,7 +2,7 @@ package commons.pages;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import commons.data.dataPage.Locale;
+import commons.data.dataPage.Lang;
 import commons.Driver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -10,15 +10,17 @@ import org.openqa.selenium.WebElement;
 
 import java.io.File;
 import java.util.List;
-import java.util.function.Supplier;
 
+import static com.codeborne.selenide.Condition.attribute;
+import static com.codeborne.selenide.Condition.cssClass;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selectors.shadowCss;
 import static com.codeborne.selenide.Selenide.*;
 
-public class BasePage {
+public class BasePage extends FrameAction {
 
-    protected <T> T checkOnPage(Locale locale, SelenideElement cssSelector, String expectedText, Class<T> classToReturn) {
+    protected <T> T checkOnPage(Lang locale, SelenideElement cssSelector, String expectedText, Class<T> classToReturn) {
         $(cssSelector).shouldBe(Condition.visible).has(Condition.text(expectedText));
         return page(classToReturn);
     }
@@ -28,7 +30,7 @@ public class BasePage {
         return page(classToReturn);
     }
 
-    protected <T> T checkTitlePage(Locale locale, String expectedTitle, Class<T> classToReturn) {
+    protected <T> T checkTitlePage(Lang locale, String expectedTitle, Class<T> classToReturn) {
         String currentTitle = Driver.currentDriver().getTitle();
         currentTitle = expectedTitle;
         return page(classToReturn);
@@ -51,21 +53,48 @@ public class BasePage {
         selenideElement.find("button").shouldBe(visible).click();
     }
 
-
+    @Step("Set email and send subscribe form")
     public BasePage sendSubscribeForm(String email) {
         executeJavaScript("window.scrollBy(0,550)", "");
-        $(By.name("subscribe-email")).shouldBe(Condition.visible).setValue(email);
-        $(".subscribe-button").click();
+        sendEmailForm("subscribe-email", ".subscribe-button", email);
         return this;
     }
 
-    @Step("Check message after sent subscribe form")
+    protected BasePage sendEmailForm(String inputSelector, String buttonSelector, String email) {
+        $(By.name(inputSelector)).shouldBe(Condition.enabled).setValue(email);
+        $(buttonSelector).click();
+        return this;
+    }
+
+    public BasePage sendShadowRootSubscribeForm(String email) {
+        SelenideElement input = $(shadowCss("[name=\"email\"]", "[cl-type=\"VIEW\"]", "[cl-type=\"CONTAINER\"]", "[cl-type=\"INPUT\"]"));
+        SelenideElement button = $(shadowCss(".main-container button", "[cl-type=\"VIEW\"]", "[cl-type=\"BUTTON\"]"));
+        input.shouldBe(visible).setValue(email);
+        button.click();
+        return this;
+    }
+
+    public BasePage checkMessageShadowRootSubscribeForm(String expectedMessage) {
+        SelenideElement text = $(shadowCss("[cl-element=\"text\"]", "[cl-type=\"VIEW\"]", "[cl-type=\"TEXT\"]"));
+        text.shouldBe(visible).shouldHave(text(expectedMessage));
+        return this;
+    }
+
+    public BasePage checkErrorTooltipShadowRootSubscribeForm(String expectedMessage) {
+        SelenideElement tooltip = $(shadowCss(".input-tooltip", "[cl-type=\"VIEW\"]", "[cl-type=\"CONTAINER\"]","[cl-type=\"INPUT\"]"));
+        actions().moveToElement(tooltip).build().perform();
+        tooltip.shouldBe(visible).shouldHave(text(expectedMessage));
+        return this;
+    }
+
+
+    @Step("Check message after send subscribe form")
     public BasePage checkSubscribeFormMessage(String expectedMessage) {
         checkFormMessage($(".subscribe"), expectedMessage);
         return this;
     }
 
-    public BasePage checkFormMessage(SelenideElement selector, String...expectedMessage) {
+    protected BasePage checkFormMessage(SelenideElement selector, String...expectedMessage) {
            for (int i=0; i < expectedMessage.length; i++) {
             int messageId = i;
              selector.$$("p")
@@ -76,7 +105,7 @@ public class BasePage {
            return this;
     }
 
-
+    @Step("Set email and send 'Esputnik' form")
     public BasePage sendEsputnikForm(String email) {
         doInEsputnikFrame(() -> {
         $(By.name("email")).shouldBe(visible).setValue(email);
@@ -85,7 +114,7 @@ public class BasePage {
         return this;
     }
 
-    @Step("Check message after sent Esputnik form")
+    @Step("Check message after send 'Esputnik' form")
     public BasePage checkEsputnikMessage(String expectedMessage) {
         doInEsputnikFrame(() -> {
         $("body").shouldHave(visible).shouldBe(text(expectedMessage));
@@ -94,7 +123,12 @@ public class BasePage {
     }
 
     public BasePage checkSuccessMessage(String message) {
-        $(".success-template-wrap").should(Condition.have(Condition.text(message)));
+        checkSuccessMessage(".success-template-wrap", message);
+        return this;
+    }
+
+    protected BasePage checkSuccessMessage(String selector, String message) {
+        $(selector).should(Condition.have(Condition.text(message)));
         return this;
     }
 
@@ -108,27 +142,4 @@ public class BasePage {
         }
         return this;
     }
-
-    private static final String ESPUTNIK_FRAME_SELECTOR = ".iframe-esputnik iframe";
-
-    public void doInEsputnikFrame(Runnable r) {
-        doInEsputnikFrame(() -> $(getFrameSelector()).shouldBe(visible), ()->{
-            r.run();
-            return null;
-        });
-    }
-
-    protected <T> T doInEsputnikFrame(Supplier<SelenideElement> elementGetter, FrameAction<T> f) {
-        switchTo().defaultContent();
-        switchTo().frame(elementGetter.get());
-        T result = f.run();
-        switchTo().defaultContent();
-        return result;
-    }
-
-    protected String getFrameSelector() {
-        return ESPUTNIK_FRAME_SELECTOR;
-    }
-
-
 }

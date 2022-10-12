@@ -1,7 +1,6 @@
-import com.codeborne.selenide.Selenide;
 import commons.App;
 import commons.data.dataPage.BlogCategory;
-import commons.data.dataPage.Locale;
+import commons.data.dataPage.Lang;
 import commons.pages.BlogPage;
 import io.qameta.allure.Description;
 import org.testng.annotations.DataProvider;
@@ -12,11 +11,11 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.page;
 import static commons.data.dataPage.BlogCategory.*;
-import static commons.data.dataPage.Locale.*;
+import static commons.data.dataPage.Lang.*;
 
 public class BlogTest extends BaseTest {
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForSubscribeForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
     @Description("This test verify sent subscribe form with valid data")
     public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
         App
@@ -25,7 +24,7 @@ public class BlogTest extends BaseTest {
                 .checkSubscribeFormMessage(message);
     }
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForSubscribeForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
     @Description("This test verify sent subscribe form with invalid data")
     public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
         App
@@ -37,13 +36,13 @@ public class BlogTest extends BaseTest {
     @DataProvider(name = "categoryFilter")
     public Object[][] ArticleCategories() {
         return new Object[][]{
-                {EN, List.of(TEMPLATES, AMP)},
+                {EN, List.of(TEMPLATES, HOW_TO)},
                 {EN, List.of(MARKETING, STRUCTURE)}
         };
     }
 
     @Test(dataProvider = "categoryFilter")
-    public void categoryFiltersShouldWorkCorrectlyTest(Locale locale, List<BlogCategory> blogCategories) {
+    public void categoryFiltersShouldWorkCorrectlyTest(Lang locale, List<BlogCategory> blogCategories) {
         App
                 .openBlogPage(locale)
                 .selectBlogFilters(blogCategories)
@@ -55,14 +54,14 @@ public class BlogTest extends BaseTest {
     public Object[][] keyWord() {
         return new Object[][]{
                 {EN, "Black Friday"},
-                {RU, "Дизайн"}
+                {RU, "версия"}
         };
     }
 
     @Test(dataProvider = "keyWord")
-    public void shouldBePossibleToFindArticlesOnDifferentLocale(Locale locale, String keyWord) {
+    public void shouldBePossibleToFindArticlesOnDifferentLocale(Lang language, String keyWord) {
         App
-                .openBlogPage(locale)
+                .openBlogPage(language)
                 .searchArticleByKeyWord(keyWord)
                 .checkAnyArticleHasText(keyWord);
         }
@@ -72,7 +71,7 @@ public class BlogTest extends BaseTest {
         App
                 .openBlogPage(EN);
 
-        executeJavaScript("window.scrollBy(0,550)", "");
+        executeJavaScript("window.scrollBy(0,450)", "");
         BlogPage blogPage = page(BlogPage.class);
         int articles =  blogPage.getArticleItemCount();
 

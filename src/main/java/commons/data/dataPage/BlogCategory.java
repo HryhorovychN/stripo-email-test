@@ -10,7 +10,8 @@ public enum BlogCategory {
     TEMPLATES("Templates"),
     STRUCTURE("Structure"),
     MARKETING("Marketing"),
-    GAMIFICATION("Gamification");
+    GAMIFICATION("Gamification"),
+    CRASH_TEST("Сrash-test");
 
     private final String category;
 

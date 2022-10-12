@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.Arrays;
 
 import static com.codeborne.selenide.Selenide.page;
-import static commons.data.dataPage.Locale.EN;
+import static commons.data.dataPage.Lang.EN;
 
 public class TemplateOrderTest {
 
