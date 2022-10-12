@@ -38,7 +38,7 @@ public class BlogPage extends BasePage {
 
     @Step("Check that any templates have any selected categories")
     public BlogPage checkArticleItemCategories(List<BlogCategory> categoriesName) {
-        sleep(2500);
+        sleep(3000);
         ElementsCollection articleItemCategories = $$(".article__item-category");
         executeJavaScript("window.scrollBy(0,200)", "");
         for (SelenideElement articleCategory : articleItemCategories) {

@@ -19,6 +19,8 @@ public class BaseTest extends TestListener {
     protected App app;
     protected SoftAssert softAssert;
     protected final RunnerConfig config = new RunnerConfig();
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_CYAN = "\u001B[36m";
 
     private void testConnections() {
         try {
@@ -28,7 +30,7 @@ public class BaseTest extends TestListener {
             connection.connect();
             if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
                 log.error("Connection status: " + connection.getURL()+ " " + connection.getResponseMessage());
-                System.out.println("Connection status: " + connection.getURL() + " " + connection.getResponseMessage() + "\\u001B[0m");
+                System.out.println(ANSI_CYAN + "!!!Connection status: " + connection.getURL() + " " + connection.getResponseMessage() + "!!!" + ANSI_RESET);
                 connection.disconnect();
                 Driver.close();
             }
