@@ -28,7 +28,7 @@ public class BaseTest extends TestListener {
             connection.connect();
             if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
                 log.error("Connection status: " + connection.getURL()+ " " + connection.getResponseMessage());
-                System.out.println("Connection status: " + connection.getURL() + " " + connection.getResponseMessage());
+                System.out.println("Connection status: " + connection.getURL() + " " + connection.getResponseMessage() + "\\u001B[0m");
                 connection.disconnect();
                 Driver.close();
             }
