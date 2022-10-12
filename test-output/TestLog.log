@@ -6411,3 +6411,6 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {"
 2022-10-12 13:37:28,562 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
 2022-10-12 13:37:30,465 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
 2022-10-12 13:37:34,466 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-12 13:50:10,881 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-12 14:16:55,317 INFO  Remote browser is starting 
+2022-10-12 14:17:22,927 INFO  Remote browser is starting 
