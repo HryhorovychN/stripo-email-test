@@ -1,6 +1,7 @@
 package commons.config;
 
 import com.codeborne.selenide.WebDriverProvider;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -16,6 +17,8 @@ public class ChromeProvider implements WebDriverProvider {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
         chromeOptions.merge(capabilities);
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
+        capabilities.setVersion("106.0");
         try {
             return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
         } catch (final MalformedURLException e) {
