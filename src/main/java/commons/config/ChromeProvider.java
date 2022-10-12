@@ -17,8 +17,8 @@ public class ChromeProvider implements WebDriverProvider {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
         chromeOptions.merge(capabilities);
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
-        capabilities.setVersion("106.0");
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NONE);
+
         try {
             return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
         } catch (final MalformedURLException e) {
