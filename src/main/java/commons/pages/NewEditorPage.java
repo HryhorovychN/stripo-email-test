@@ -21,6 +21,7 @@ public class NewEditorPage extends BasePage {
     }
 
     public NewEditorPage checkBetaTesterFormMessage(String expectedMessage) {
+        sleep(100);
         checkFormMessage($("#editor-tester-form"), expectedMessage);
         return this;
     }

@@ -7,8 +7,6 @@ import io.qameta.allure.Allure;
 import io.qameta.allure.selenide.AllureSelenide;
 import lombok.extern.apachecommons.CommonsLog;
 
-import static commons.Driver.getBrowserLogs;
-
 @CommonsLog
 public class RunnerConfig {
 

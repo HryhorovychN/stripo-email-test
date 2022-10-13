@@ -142,6 +142,7 @@ public class BlogPage extends BasePage {
     }
 
     public int getArticleItemCount() {
+        sleep(2500);
         return $$(".article__item").size();
     }
 

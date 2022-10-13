@@ -1,6 +1,5 @@
 import commons.App;
 import commons.data.User;
-import commons.data.dataPage.Lang;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 
@@ -43,7 +42,7 @@ public class NewEditorTest extends BaseTest {
     }
 
     @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
-    @Description("This test verify sent Beta Tester form with valid data")
+    @Description("This test verify sent Beta Tester form with invalid data")
     public void checkSendBetaTesterFormWithInvalidData(String email, String message) {
         App
                 .openNewEditorPage(EN)

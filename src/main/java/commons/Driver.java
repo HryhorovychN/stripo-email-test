@@ -2,19 +2,24 @@ package commons;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import lombok.extern.log4j.Log4j;
 import org.openqa.selenium.*;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-
+@Log4j
 public class Driver {
 
     public static WebDriver currentDriver() {
@@ -79,10 +84,21 @@ public class Driver {
         return ((TakesScreenshot) currentDriver()).getScreenshotAs(OutputType.BYTES);
     }
 
-    public static List<LogEntry> getBrowserLogs() {
-        LogEntries log = currentDriver().manage().logs().get("browser");
-        List<LogEntry> logList = log.getAll();
-        return logList;
+    public static String browserLog() throws IOException {
+
+        String res = "";
+        try {
+            LogEntries logEntries = getWebDriver().manage().logs().get(LogType.BROWSER);
+            for (LogEntry entry : logEntries) {
+                String logStr = new Date(entry.getTimestamp()) + " " + entry.getLevel() + " " + entry.getMessage();
+                res += "\n" + logStr;
+                System.out.println("====> BROWSER: " + logStr);
+            }
+        } catch (Throwable e) {
+            res = String.format("Can not get browser Log " + e.getMessage());
+            log.error("", e);
+        }
+        return res;
     }
 
     public static int getResponseStatus() {
