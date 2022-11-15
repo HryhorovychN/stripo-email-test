@@ -128,7 +128,7 @@ public class BasePage extends FrameAction {
     }
 
     protected BasePage checkSuccessMessage(String selector, String message) {
-        $(selector).should(Condition.have(Condition.text(message)));
+        $(selector).waitUntil(Condition.have(Condition.text(message)), 6000);
         return this;
     }
 

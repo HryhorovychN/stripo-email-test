@@ -12,6 +12,8 @@ import static commons.data.dataPage.Lang.EN;
 
 public class TemplateOrderTest {
 
+    ClassLoader classLoader = getClass().getClassLoader();
+
     @DataProvider(name = "templateOrderForm")
     public Object[][] TemplateOrderForm() {
         return new Object[][]{
@@ -20,6 +22,27 @@ public class TemplateOrderTest {
 
         };
     }
+
+    @Test
+    public void shouldBeSendOrderTemplateFormWithFile() {
+        TemplateOrderPage templateOrderPage = App.openTemplateOrderPage(EN);
+
+        templateOrderPage
+                .setFullName("User")
+                .setEmail(User.getValidTestEmail())
+                .uploadListFile(Arrays.asList(
+                        new File(classLoader.getResource("image.jpg").getFile())));
+
+        templateOrderPage
+                .clickSendButton()
+                .checkSuccessMessage("Thank you for your brief!\n" +
+                        "Your data is on the way to our professionals!\n" +
+                        "\n" +
+                        "We will get acquainted with your request and will send you a confirmation email with some clarifications. " +
+                        "And/or we will issue you the invoice to the email you have mentioned in the brief by COB of the next business day.");
+    }
+
+
 
     @Test(dataProvider = "templateOrderForm")
     public void checkOrderTemplateForm(String expectedType, boolean expectedCorrection, boolean expectedReport, boolean expectedUrgency, String totalPrice) {
@@ -42,7 +65,6 @@ public class TemplateOrderTest {
 
     @Test
     public void uploadFilesToOrder() {
-        ClassLoader classLoader = getClass().getClassLoader();
         App
                 .openTemplateOrderPage(EN)
                 .setFullName("User")
