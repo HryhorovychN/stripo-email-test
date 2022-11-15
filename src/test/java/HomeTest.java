@@ -21,38 +21,38 @@ public class HomeTest extends BaseTest {
                 {DE, "E-Mail-Design-Plattform", "Stripo — KOSTENLOSER E-Mail-Vorlagen-Generator: Drag and Drop HTML-E-Mail-Editor"}};
     }
 
-    @Test(dataProvider = "seoTitleTranslateList")
-    public void seoTitleShouldBeTranslatedTest(Lang locale, String expectedText, String expectedTitle) {
-        App
-                .openHomePage(locale)
-                .checkOnPage(locale, expectedText)
-                .checkTitlePage(locale, expectedTitle);
-    }
-
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
-    @Description("This test verify sent subscribe form with valid data")
-    public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
-        App
-                .openHomePage(EN)
-                .sendSubscribeForm(email)
-                .checkSubscribeFormMessage(message);
-    }
-
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
-    @Description("This test verify sent subscribe form with invalid data")
-    public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
-        App
-                .openHomePage(EN)
-                .sendSubscribeForm(email)
-                .checkSubscribeFormMessage(message);
-    }
-
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "esputnikSubscribeForm", priority = 2)
-    public void sendEsputnikBookDemoFormTest(String email, String message) {
-        App
-                .openHomePage(UA)
-                .sendEsputnikForm(email)
-                .checkEsputnikMessage(message);
-    }
+//    @Test(dataProvider = "seoTitleTranslateList")
+//    public void seoTitleShouldBeTranslatedTest(Lang locale, String expectedText, String expectedTitle) {
+//        App
+//                .openHomePage(locale)
+//                .checkOnPage(locale, expectedText)
+//                .checkTitlePage(locale, expectedTitle);
+//    }
+//
+//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
+//    @Description("This test verify sent subscribe form with valid data")
+//    public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
+//        App
+//                .openHomePage(EN)
+//                .sendSubscribeForm(email)
+//                .checkSubscribeFormMessage(message);
+//    }
+//
+//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
+//    @Description("This test verify sent subscribe form with invalid data")
+//    public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
+//        App
+//                .openHomePage(EN)
+//                .sendSubscribeForm(email)
+//                .checkSubscribeFormMessage(message);
+//    }
+//
+//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "esputnikSubscribeForm", priority = 2)
+//    public void sendEsputnikBookDemoFormTest(String email, String message) {
+//        App
+//                .openHomePage(UA)
+//                .sendEsputnikForm(email)
+//                .checkEsputnikMessage(message);
+//    }
 
 }
