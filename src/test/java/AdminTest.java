@@ -10,6 +10,8 @@ import static com.codeborne.selenide.Selenide.page;
 import static commons.App.baseUrl;
 import static commons.Driver.open;
 import static commons.Driver.waitForUrlContains;
+import static commons.data.User.getRandomSlug;
+import static commons.data.User.getRandomTitle;
 import static commons.data.dataPage.BlogCategory.CRASH_TEST;
 import static commons.data.dataPage.BlogCategory.DESIGN;
 import static commons.data.dataPage.BlogCategory.HOW_TO;
@@ -17,6 +19,9 @@ import static commons.data.dataPage.BlogCategory.STRUCTURE;
 import static commons.data.dataPage.Lang.*;
 
 public class AdminTest extends BaseTest {
+
+    private final String slug = getRandomSlug();
+    private final String title = getRandomTitle();
 
     @Override
     public void clearCookie() {
@@ -37,17 +42,17 @@ public class AdminTest extends BaseTest {
                 .checkCreateArticleButton()
                 .clickCreateArticleButton()
                 .checkOnPage("New Article")
-                .setArticleSlug("TestSlug")
+                .setArticleSlug(slug)
                 .selectAuthor("Guest Author")
                 .setReadTime("10")
                 .selectCategories(List.of(STRUCTURE, CRASH_TEST, HOW_TO))
                 .clickArticleLocale(EN)
-                .setTitle(EN, "TestTitle")
+                .setTitle(EN, title)
                 .setPreview(EN, "TestPreview")
                 .setContent("TestContent")
                 .setBackgroundImg("https://staging.stripo.email/photos/shares/Blog/01-1-1024x206.png")
                 .clickSaveButton()
-                .checkFirstArticleName("TestTitle")
+                .checkFirstArticleName(title)
                 .checkFirstArticlePublish(false);
     }
 
@@ -60,9 +65,9 @@ public class AdminTest extends BaseTest {
                 .clickSaveButton()
                 .clickBackButton()
                 .checkFirstArticlePublish(true)
-                .openArticleByName(EN, "TestSlug")
+                .openArticleByName(EN, slug)
                 .checkArticleReadTimeValue("10")
-                .checkTitleValue("TestTitle")
+                .checkTitleValue(title)
                 .checkContentValue("TestContent")
                 .checkAuthorNameValue("Guest Author");
     }
@@ -74,6 +79,6 @@ public class AdminTest extends BaseTest {
                 .clickDeleteArticleByIdx(0)
                 .checkModalDialogConfirm(true)
                 .confirmArticleDelete()
-                .checkNotExistArticleName("TestTitle");
+                .checkNotExistArticleName(title);
     }
 }
