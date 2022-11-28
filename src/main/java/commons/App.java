@@ -59,6 +59,10 @@ public class App {
         return openPage(locale, Const.NEW_EDITOR, NewEditorPage.class);
     }
 
+    public static BlogPage openPricingPage(Lang locale) {
+        return openPage(locale, Const.PLUGIN, BlogPage.class);
+    }
+
     /* Admin pages */
     public static AdminPage openAdminLoginPage() {
         return openPage(Const.ADMIN, AdminPage.class);

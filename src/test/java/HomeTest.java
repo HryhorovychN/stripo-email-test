@@ -8,26 +8,43 @@ import static commons.data.dataPage.Lang.*;
 
 public class HomeTest extends BaseTest {
 
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForNewSubscribeForm")
+    @Description("This test verify sent subscribe form with valid data")
+    public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
+        App
+                .openHomePage(EN)
+                .sendShadowRootSubscribeForm(email)
+                .checkMessageShadowRootSubscribeForm(message);
+    }
+
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForNewSubscribeForm")
+    @Description("This test verify sent subscribe form with invalid data")
+    public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
+        App
+                .openHomePage(EN)
+                .sendShadowRootSubscribeForm(email)
+                .checkErrorTooltipShadowRootSubscribeForm(message);
+    }
+
     @DataProvider(name = "seoTitleTranslateList")
     public Object[][] localizationMap() {
         return new Object[][]{
-                {FR, "Plate-forme de conception d'e-mails", "Stripo — générateur GRATUIT de modèles d'e-mails : éditeur de courrier électronique HTML par glisser/déposer."},
-                {IT, "Piattaforma per la Progettazione di E-mail", "Stripo — FREE Email Template Builder: editor HTML trascina e rilascia per la posta elettronica"},
-                {UA, "Універсальна платформа для створення HTML-листів", "Stripo — безкоштовний конструктор email-шаблонів: візуальний та HTML редактори"},
-                {PT, "Plataforma de Criação de Emails", "Stripo — Criador de Modelos de E-mail GRÁTIS: Editor \"Arraste e Solte\" de E-mail em HTML"},
-                {EN, "Email Design Platform", "Stripo — FREE Email Template Builder: Drag and Drop Html Email Editor"},
-                {RU, "Универсальная платформа для создания HTML-писем", "Stripo — бесплатный конструктор email-шаблонов: визуальный и HTML редакторы"},
-                {ES, "Plataforma de Diseño de Correo Electrónico", "Stripo: creador de plantillas de correo electrónico GRATUITO: Editor visual (arrastrar y soltar) HTML de correo electrónico"},
-                {DE, "E-Mail-Design-Plattform", "Stripo — KOSTENLOSER E-Mail-Vorlagen-Generator: Drag and Drop HTML-E-Mail-Editor"}};
+                {FR, "Stripo — générateur GRATUIT de modèles d'e-mails : éditeur de courrier électronique HTML par glisser/déposer."},
+                {IT, "Stripo — FREE Email Template Builder: editor HTML trascina e rilascia per la posta elettronica"},
+                {UA, "Stripo — безкоштовний конструктор email-шаблонів: візуальний та HTML редактори"},
+                {PT, "Stripo — Criador de Modelos de E-mail GRÁTIS: Editor \"Arraste e Solte\" de E-mail em HTML"},
+                {EN, "Stripo! — FREE Email Template Builder: Drag and Drop Html Email Editor"},
+                {RU, "Stripo — бесплатный конструктор email-шаблонов: визуальный и HTML редакторы"},
+                {ES, "Stripo: creador de plantillas de correo electrónico GRATUITO: Editor visual (arrastrar y soltar) HTML de correo electrónico"},
+                {DE, "Stripo — KOSTENLOSER E-Mail-Vorlagen-Generator: Drag and Drop HTML-E-Mail-Editor"}};
     }
 
-//    @Test(dataProvider = "seoTitleTranslateList")
-//    public void seoTitleShouldBeTranslatedTest(Lang locale, String expectedText, String expectedTitle) {
-//        App
-//                .openHomePage(locale)
-//                .checkOnPage(locale, expectedText)
-//                .checkTitlePage(locale, expectedTitle);
-//    }
+    @Test(dataProvider = "seoTitleTranslateList")
+    public void seoTitleShouldBeTranslatedTest(Lang locale, String expectedTitle) {
+        App
+                .openHomePage(locale)
+                .checkTitlePage(locale, expectedTitle);
+    }
 //
 //    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
 //    @Description("This test verify sent subscribe form with valid data")

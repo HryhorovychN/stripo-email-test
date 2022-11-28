@@ -19,7 +19,7 @@ public class RunnerConfig {
         Configuration.reportsFolder = "target/screenshots";
         Configuration.holdBrowserOpen = false;
         Configuration.screenshots = true;
-        Configuration.timeout = 13000;
+        Configuration.timeout = 10000;
         Configuration.browser = "chrome";
 
         if (!modeDebug) {

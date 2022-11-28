@@ -8,17 +8,13 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static commons.data.dataPage.ItemType.POPULAR;
+import static commons.data.User.getRandomInxBySize;
 import static commons.data.dataPage.Lang.EN;
 import static commons.data.dataPage.TemplateType.ALL;
 import static commons.data.dataPage.TemplateType.FREE;
 import static commons.data.dataPage.TemplateType.PREMIUM;
 
 public class TemplateTest extends BaseTest {
-
-    @Override
-    public void clearCookie() {
-    }
 
     @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForNewSubscribeForm")
     @Description("This test verify sent subscribe form with valid data")
@@ -47,42 +43,41 @@ public class TemplateTest extends BaseTest {
         };
     }
 
-//    @Ignore
-//    @Test(dataProvider = "templateFilter")
-//    public void templateFiltersShouldWorkCorrectlyTest(Lang lang, TemplateType templateType) {
-//        App
-//                .openTemplatesPage(lang)
-//                .setTemplateType(templateType)
-//                .setItemType(POPULAR)
-//                .checkTemplatesType(templateType);
-//    }
+    @Test(dataProvider = "templateFilter")
+    public void templateFiltersShouldWorkCorrectlyTest(Lang lang, TemplateType templateType) {
+        App
+                .openTemplatesPage(lang)
+                .setTemplateType(templateType)
+                .checkTemplatesType(templateType);
+    }
 
     @DataProvider(name = "templateCategory")
     public Object[][] TemplateCategory() {
         return new Object[][]{
-                {"Type", List.of("Apology", "Cold Emails", "Alerts & Notifications")}
+                {"Type", List.of("Holidays", "Abandoned Cart"), "Industry", List.of("Auto & Moto")},
+                {"Seasons", List.of("Black Friday", "Feature"), "Feature", List.of("CSS Animations", "Countdown timer")}
+
         };
     }
 
-//    @Ignore
-//    @Test(dataProvider = "templateCategory")
-//    public void selectedCategoriesShouldBeSaved(String category, List<String> categoriesName) {
-//        App
-//                .openTemplatesPage(EN)
-//                .expandTemplateCategory(category)
-//                .selectTemplateCategories(categoriesName)
-//                .checkChosenCategories(categoriesName);
-//    }
+    @Test(dataProvider = "templateCategory")
+    public void openedTemplateShouldHaveSelectedCategoriesTest(String firstCategoryName, List<String> firstListCategories, String secondCategoryName, List<String> secondListCategories) {
+        App
+                .openTemplatesPage(EN)
+                .expandTemplateCategory(firstCategoryName)
+                .selectTemplateCategories(firstListCategories)
+                .expandTemplateCategory(secondCategoryName)
+                .selectTemplateCategories(secondListCategories)
+                .openRandomTemplate()
+                .checkChosenCategories(firstCategoryName, firstListCategories)
+                .checkChosenCategories(secondCategoryName, secondListCategories);
+    }
 
-//    @Ignore
-//    @Test(dependsOnMethods = {"selectedCategoriesShouldBeSaved"})
-//    public void selectedCategoriesShouldBeRemoved() {
-//
-//        App
-//                .openTemplatesPage(EN)
-//                .closeItemCategory("Apology")
-//                .checkChosenCategories(List.of("Cold Emails", "Alerts & Notifications"))
-//                .closeAllItemCategory()
-//                .checkChosenCategories(List.of(""));
-//    }
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "keyWord")
+    public void shouldBePossibleToFindTemplateOnDifferentLocaleTest(Lang language, String keyWord) {
+        App
+                .openTemplatesPage(language)
+                .searchTemplateByKeyWord(keyWord)
+                .openRandomTemplate();
+    }
 }

@@ -6414,3 +6414,983 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {"
 2022-10-12 13:50:10,881 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
 2022-10-12 14:16:55,317 INFO  Remote browser is starting 
 2022-10-12 14:17:22,927 INFO  Remote browser is starting 
+2022-10-12 15:33:49,119 INFO  Remote browser is starting 
+2022-10-12 15:34:28,409 INFO  Remote browser is starting 
+2022-10-12 15:36:51,563 INFO  Remote browser is starting 
+2022-10-12 15:37:49,506 INFO  Remote browser is starting 
+2022-10-12 15:38:00,191 INFO  Remote browser is starting 
+2022-10-12 15:43:58,310 INFO  Remote browser is starting 
+2022-10-12 15:44:54,820 INFO  Remote browser is starting 
+2022-10-12 15:45:26,282 INFO  Remote browser is starting 
+2022-10-12 15:46:20,558 INFO  Remote browser is starting 
+2022-10-12 15:47:37,682 INFO  Remote browser is starting 
+2022-10-12 16:36:04,410 INFO  Remote browser is starting 
+2022-10-12 18:02:27,889 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-12 18:05:49,556 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-12 18:06:25,740 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 12:49:54,854 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:25:53,272 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-13 15:25:53,272 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:25:53,272 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-10-13 15:25:53,272 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-13 15:25:53,272 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:26:11,452 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:26:12,433 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:26:12,800 ERROR Test paginationShouldWorkCorrectly failed 
+2022-10-13 15:26:13,035 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-10-13 15:26:13,142 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-13 15:26:13,665 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:26:13,665 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:26:19,657 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-10-13 15:26:25,500 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:26:26,136 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:26:26,286 INFO  Test case: checkCarouselControls running 
+2022-10-13 15:26:26,289 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-13 15:26:28,237 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:26:28,237 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:31,325 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:31,476 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:32,524 INFO  Test sendCustomerStoriesForm passed 
+2022-10-13 15:26:32,577 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:26:32,619 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-13 15:26:32,824 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:26:33,205 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-13 15:26:33,329 INFO  Test checkCarouselControls passed 
+2022-10-13 15:26:34,445 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:34,673 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:34,829 INFO  Test case: checkSendEnterpriseForm running 
+2022-10-13 15:26:35,605 INFO  Test sendCustomerStoriesForm passed 
+2022-10-13 15:26:35,989 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:26:36,082 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:26:36,083 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-13 15:26:36,149 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:26:36,743 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:37,113 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:39,174 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:26:39,344 INFO  Test case: checkOrderTemplateForm running 
+2022-10-13 15:26:40,651 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:40,782 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:41,486 INFO  Test checkSendEnterpriseForm passed 
+2022-10-13 15:26:41,744 INFO  Test case: uploadFilesToOrder running 
+2022-10-13 15:26:42,502 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:26:43,153 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:43,300 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:45,698 INFO  Test uploadFilesToOrder passed 
+2022-10-13 15:26:45,960 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:46,041 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:46,712 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-10-13 15:26:47,878 INFO  Test checkOrderTemplateForm passed 
+2022-10-13 15:26:47,880 INFO  Test case: checkOrderTemplateForm running 
+2022-10-13 15:26:48,219 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-10-13 15:26:48,219 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-10-13 15:26:48,219 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-10-13 15:26:50,019 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:50,103 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-13 15:26:51,498 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-13 15:26:51,562 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-10-13 15:26:53,195 INFO  Test checkOrderTemplateForm passed 
+2022-10-13 15:26:53,197 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-10-13 15:26:54,250 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-10-13 15:26:54,352 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-10-13 15:26:57,000 INFO  Test sendFeedBackFormWithValidData passed 
+2022-10-13 15:27:00,113 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:27:00,251 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-10-13 15:27:00,342 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:27:01,367 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-10-13 15:27:07,699 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:27:07,704 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-13 15:27:08,224 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:27:08,225 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-13 15:27:12,921 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-13 15:27:14,512 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-13 15:27:17,905 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-10-13 15:27:21,918 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-10-13 15:27:22,178 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-13 15:27:22,178 INFO  Test case: sendGamificationForm running 
+2022-10-13 15:27:24,690 INFO  Test sendEsputnikBookDemoFormTest passed 
+2022-10-13 15:27:24,902 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-13 15:27:27,427 INFO  Test sendEsputnikBookDemoFormTest passed 
+2022-10-13 15:27:40,464 ERROR Test sendGamificationForm failed 
+2022-10-13 15:27:41,635 INFO  Test case: sendGamificationForm running 
+2022-10-13 15:27:49,134 INFO  Test sendGamificationForm passed 
+2022-10-13 15:27:50,176 INFO  Test case: loginAdminTest running 
+2022-10-13 15:27:54,306 INFO  Test loginAdminTest passed 
+2022-10-13 15:27:54,308 INFO  Test case: createNewArticleDraftTest running 
+2022-10-13 15:28:00,980 INFO  Test createNewArticleDraftTest passed 
+2022-10-13 15:28:00,981 INFO  Test case: articleShouldPublishSuccessfully running 
+2022-10-13 15:28:09,452 INFO  Test articleShouldPublishSuccessfully passed 
+2022-10-13 15:28:09,454 INFO  Test case: articleShouldBeDelete running 
+2022-10-13 15:28:12,480 INFO  Test articleShouldBeDelete passed 
+2022-10-13 15:34:57,153 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:57,786 ERROR Test paginationShouldWorkCorrectly skipped 
+2022-10-13 15:34:57,786 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-13 15:34:57,792 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:57,795 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:34:57,800 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-13 15:34:57,832 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-13 15:34:57,842 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-13 15:34:58,070 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,070 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,076 ERROR Test checkCarouselControls skipped 
+2022-10-13 15:34:58,076 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:58,078 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:34:58,078 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-13 15:34:58,085 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,100 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-13 15:34:58,103 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:58,103 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,116 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:34:58,118 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,126 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,148 INFO  Test case: checkOrderTemplateForm running 
+2022-10-13 15:34:58,159 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,238 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,294 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,299 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,307 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:34:58,311 INFO  Test case: uploadFilesToOrder running 
+2022-10-13 15:34:58,390 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,394 ERROR Test checkSendEnterpriseForm skipped 
+2022-10-13 15:34:58,395 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:34:58,395 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:58,688 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,693 ERROR Test checkSendBetaTesterFormWithInvalidData skipped 
+2022-10-13 15:34:58,694 ERROR Test sendFeedBackFormWithInvalidData skipped 
+2022-10-13 15:34:58,694 ERROR Test checkSendBetaTesterFormWithValidData skipped 
+2022-10-13 15:34:58,697 ERROR Test sendFeedBackFormWithValidData skipped 
+2022-10-13 15:34:58,703 ERROR Test shouldBePossibleOpenCloseCodeEditor skipped 
+2022-10-13 15:34:58,706 ERROR Test shouldBePossibleToSwitchMobileDesktopMode skipped 
+2022-10-13 15:34:58,965 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:34:58,970 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:58,971 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:34:58,973 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:34:58,973 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:07,129 ERROR Test uploadFilesToOrder failed 
+2022-10-13 15:35:07,132 ERROR Test uploadFilesToOrder failed 
+2022-10-13 15:35:07,255 ERROR Test checkOrderTemplateForm failed 
+2022-10-13 15:35:08,403 ERROR Test checkOrderTemplateForm failed 
+2022-10-13 15:35:08,423 ERROR Test sendGamificationForm skipped 
+2022-10-13 15:35:08,423 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-13 15:35:08,427 ERROR Test sendGamificationForm skipped 
+2022-10-13 15:35:08,427 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-13 15:35:08,784 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:08,787 ERROR Test loginAdminTest skipped 
+2022-10-13 15:35:08,790 ERROR Test createNewArticleDraftTest skipped 
+2022-10-13 15:35:08,793 ERROR Test articleShouldPublishSuccessfully skipped 
+2022-10-13 15:35:08,797 ERROR Test articleShouldBeDelete skipped 
+2022-10-13 15:35:34,056 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:34,363 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:34,363 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-13 15:35:34,363 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:34,363 ERROR Test paginationShouldWorkCorrectly skipped 
+2022-10-13 15:35:34,363 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-13 15:35:34,374 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-13 15:35:34,376 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-13 15:35:34,606 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:34,611 ERROR Test checkCarouselControls skipped 
+2022-10-13 15:35:34,612 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-13 15:35:34,615 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-13 15:35:34,622 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:34,627 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:34,627 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:34,658 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:34,667 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,667 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:34,667 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:34,673 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,673 INFO  Test case: checkOrderTemplateForm running 
+2022-10-13 15:35:34,677 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,680 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,684 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,689 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,692 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,697 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-13 15:35:34,701 INFO  Test case: uploadFilesToOrder running 
+2022-10-13 15:35:34,880 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:34,886 ERROR Test checkSendEnterpriseForm skipped 
+2022-10-13 15:35:34,887 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:34,887 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:35,127 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:35,132 ERROR Test checkSendBetaTesterFormWithInvalidData skipped 
+2022-10-13 15:35:35,132 ERROR Test sendFeedBackFormWithInvalidData skipped 
+2022-10-13 15:35:35,132 ERROR Test checkSendBetaTesterFormWithValidData skipped 
+2022-10-13 15:35:35,136 ERROR Test sendFeedBackFormWithValidData skipped 
+2022-10-13 15:35:35,140 ERROR Test shouldBePossibleOpenCloseCodeEditor skipped 
+2022-10-13 15:35:35,144 ERROR Test shouldBePossibleToSwitchMobileDesktopMode skipped 
+2022-10-13 15:35:35,403 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:35,408 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:35,409 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:35,413 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-13 15:35:35,413 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-13 15:35:42,320 ERROR Test checkOrderTemplateForm failed 
+2022-10-13 15:35:42,544 ERROR Test uploadFilesToOrder failed 
+2022-10-13 15:35:43,622 INFO  Test case: checkOrderTemplateForm running 
+2022-10-13 15:35:48,460 ERROR Test checkOrderTemplateForm failed 
+2022-10-13 15:35:48,967 ERROR Test sendGamificationForm skipped 
+2022-10-13 15:35:48,967 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-13 15:35:48,970 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-13 15:35:48,970 ERROR Test sendGamificationForm skipped 
+2022-10-13 15:35:49,299 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-13 15:35:49,303 ERROR Test loginAdminTest skipped 
+2022-10-13 15:35:49,306 ERROR Test createNewArticleDraftTest skipped 
+2022-10-13 15:35:49,309 ERROR Test articleShouldPublishSuccessfully skipped 
+2022-10-13 15:35:49,312 ERROR Test articleShouldBeDelete skipped 
+2022-10-21 15:34:12,057 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:12,336 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:12,336 ERROR Test paginationShouldWorkCorrectly skipped 
+2022-10-21 15:34:12,336 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-21 15:34:12,339 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-21 15:34:12,339 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:12,340 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale skipped 
+2022-10-21 15:34:12,342 ERROR Test categoryFiltersShouldWorkCorrectlyTest skipped 
+2022-10-21 15:34:12,574 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:12,583 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,586 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,588 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,589 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:12,591 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,595 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,600 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,600 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:12,602 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:12,605 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,605 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:12,606 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:12,608 ERROR Test seoTitleShouldBeTranslatedTest skipped 
+2022-10-21 15:34:12,609 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:12,615 ERROR Test checkCarouselControls skipped 
+2022-10-21 15:34:12,615 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-21 15:34:12,619 ERROR Test sendCustomerStoriesForm skipped 
+2022-10-21 15:34:12,620 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:34:12,621 INFO  Test case: uploadFilesToOrder running 
+2022-10-21 15:34:12,860 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:12,869 ERROR Test checkSendEnterpriseForm skipped 
+2022-10-21 15:34:12,870 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:12,870 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:13,107 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:13,114 ERROR Test checkSendBetaTesterFormWithInvalidData skipped 
+2022-10-21 15:34:13,114 ERROR Test sendFeedBackFormWithInvalidData skipped 
+2022-10-21 15:34:13,114 ERROR Test checkSendBetaTesterFormWithValidData skipped 
+2022-10-21 15:34:13,118 ERROR Test sendFeedBackFormWithValidData skipped 
+2022-10-21 15:34:13,118 ERROR Test shouldBePossibleOpenCloseCodeEditor skipped 
+2022-10-21 15:34:13,118 ERROR Test shouldBePossibleToSwitchMobileDesktopMode skipped 
+2022-10-21 15:34:13,366 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:13,373 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:13,373 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:13,376 ERROR Test verifySentSubscribeFormWithInvalidDataTest skipped 
+2022-10-21 15:34:13,376 ERROR Test verifySentSubscribeFormWithValidDataTest skipped 
+2022-10-21 15:34:20,614 ERROR Test uploadFilesToOrder failed 
+2022-10-21 15:34:20,648 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:34:21,509 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:34:25,962 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:34:25,980 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:34:25,987 ERROR Test sendGamificationForm skipped 
+2022-10-21 15:34:25,988 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-21 15:34:25,989 ERROR Test sendGamificationForm skipped 
+2022-10-21 15:34:25,992 ERROR Test sendEsputnikBookDemoFormTest skipped 
+2022-10-21 15:34:26,326 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-10-21 15:34:26,338 ERROR Test loginAdminTest skipped 
+2022-10-21 15:34:26,342 ERROR Test createNewArticleDraftTest skipped 
+2022-10-21 15:34:26,346 ERROR Test articleShouldPublishSuccessfully skipped 
+2022-10-21 15:34:26,350 ERROR Test articleShouldBeDelete skipped 
+2022-10-21 15:40:30,177 INFO  Remote browser is starting 
+2022-10-21 15:40:30,207 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:40:30,208 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-21 15:40:30,208 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-10-21 15:40:30,208 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:40:30,208 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-21 15:40:30,513 ERROR Test paginationShouldWorkCorrectly failed 
+2022-10-21 15:40:30,513 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale failed 
+2022-10-21 15:40:30,514 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:30,517 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:30,523 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-21 15:40:30,528 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale failed 
+2022-10-21 15:40:30,528 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:30,528 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:30,528 ERROR Test paginationShouldWorkCorrectly failed 
+2022-10-21 15:40:30,528 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-21 15:40:31,892 INFO  Remote browser is starting 
+2022-10-21 15:40:31,901 INFO  Test case: checkCarouselControls running 
+2022-10-21 15:40:31,901 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-21 15:40:31,911 ERROR Test checkCarouselControls failed 
+2022-10-21 15:40:31,911 ERROR Test sendCustomerStoriesForm failed 
+2022-10-21 15:40:31,911 ERROR Test checkCarouselControls failed 
+2022-10-21 15:40:31,911 ERROR Test sendCustomerStoriesForm failed 
+2022-10-21 15:40:32,005 INFO  Remote browser is starting 
+2022-10-21 15:40:32,014 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:40:32,014 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:40:32,022 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:32,022 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:32,022 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:32,022 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:32,070 INFO  Remote browser is starting 
+2022-10-21 15:40:32,076 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:40:32,076 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:40:32,076 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:40:32,084 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:32,084 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-10-21 15:40:32,084 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:32,084 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:32,085 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:32,084 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-10-21 15:40:32,085 INFO  Test case: uploadFilesToOrder running 
+2022-10-21 15:40:32,085 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:40:32,091 ERROR Test uploadFilesToOrder failed 
+2022-10-21 15:40:32,091 ERROR Test uploadFilesToOrder failed 
+2022-10-21 15:40:32,092 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:40:32,092 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:40:33,067 INFO  Remote browser is starting 
+2022-10-21 15:40:33,075 INFO  Test case: checkSendEnterpriseForm running 
+2022-10-21 15:40:33,075 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:40:33,075 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:40:33,083 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:33,083 ERROR Test checkSendEnterpriseForm failed 
+2022-10-21 15:40:33,083 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:33,083 ERROR Test checkSendEnterpriseForm failed 
+2022-10-21 15:40:33,084 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:33,084 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:33,173 INFO  Remote browser is starting 
+2022-10-21 15:40:33,182 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-10-21 15:40:33,182 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-10-21 15:40:33,182 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-10-21 15:40:33,182 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-10-21 15:40:33,182 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-10-21 15:40:33,193 ERROR Test shouldBePossibleOpenCloseCodeEditor failed 
+2022-10-21 15:40:33,194 ERROR Test shouldBePossibleOpenCloseCodeEditor failed 
+2022-10-21 15:40:33,195 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-10-21 15:40:33,195 ERROR Test sendFeedBackFormWithValidData failed 
+2022-10-21 15:40:33,195 ERROR Test sendFeedBackFormWithValidData failed 
+2022-10-21 15:40:33,196 ERROR Test checkSendBetaTesterFormWithValidData failed 
+2022-10-21 15:40:33,196 ERROR Test checkSendBetaTesterFormWithInvalidData failed 
+2022-10-21 15:40:33,196 ERROR Test checkSendBetaTesterFormWithInvalidData failed 
+2022-10-21 15:40:33,196 ERROR Test checkSendBetaTesterFormWithValidData failed 
+2022-10-21 15:40:33,198 ERROR Test sendFeedBackFormWithInvalidData failed 
+2022-10-21 15:40:33,198 ERROR Test sendFeedBackFormWithInvalidData failed 
+2022-10-21 15:40:33,200 ERROR Test shouldBePossibleToSwitchMobileDesktopMode failed 
+2022-10-21 15:40:33,200 ERROR Test shouldBePossibleToSwitchMobileDesktopMode failed 
+2022-10-21 15:40:34,109 INFO  Remote browser is starting 
+2022-10-21 15:40:34,115 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:40:34,115 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:40:34,123 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:34,123 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:40:34,123 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:34,123 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:40:34,127 INFO  Test case: sendGamificationForm running 
+2022-10-21 15:40:34,127 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-21 15:40:34,133 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-10-21 15:40:34,133 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-10-21 15:40:34,133 ERROR Test sendGamificationForm failed 
+2022-10-21 15:40:34,133 ERROR Test sendGamificationForm failed 
+2022-10-21 15:40:35,135 INFO  Remote browser is starting 
+2022-10-21 15:40:35,150 INFO  Test case: loginAdminTest running 
+2022-10-21 15:40:35,165 ERROR Test loginAdminTest failed 
+2022-10-21 15:40:35,165 ERROR Test loginAdminTest failed 
+2022-10-21 15:42:48,859 INFO  Remote browser is starting 
+2022-10-21 15:42:48,889 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-10-21 15:42:48,889 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-21 15:42:48,889 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:42:48,889 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:42:48,889 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-21 15:42:49,170 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:49,170 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale failed 
+2022-10-21 15:42:49,170 ERROR Test paginationShouldWorkCorrectly failed 
+2022-10-21 15:42:49,170 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:49,180 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-21 15:42:49,188 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:49,188 ERROR Test shouldBePossibleToFindArticlesOnDifferentLocale failed 
+2022-10-21 15:42:49,188 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-21 15:42:49,188 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:49,188 ERROR Test paginationShouldWorkCorrectly failed 
+2022-10-21 15:42:50,494 INFO  Remote browser is starting 
+2022-10-21 15:42:50,502 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:42:50,508 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-10-21 15:42:50,508 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-10-21 15:42:50,509 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:42:50,515 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:50,515 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:50,515 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:42:50,520 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:50,521 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:50,539 INFO  Remote browser is starting 
+2022-10-21 15:42:50,545 INFO  Test case: checkCarouselControls running 
+2022-10-21 15:42:50,545 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-21 15:42:50,554 ERROR Test sendCustomerStoriesForm failed 
+2022-10-21 15:42:50,554 ERROR Test sendCustomerStoriesForm failed 
+2022-10-21 15:42:50,556 ERROR Test checkCarouselControls failed 
+2022-10-21 15:42:50,556 ERROR Test checkCarouselControls failed 
+2022-10-21 15:42:50,619 INFO  Remote browser is starting 
+2022-10-21 15:42:50,626 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:42:50,626 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:42:50,633 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:50,633 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:50,635 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:42:50,635 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:50,635 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:50,636 INFO  Test case: uploadFilesToOrder running 
+2022-10-21 15:42:50,643 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:42:50,643 ERROR Test uploadFilesToOrder failed 
+2022-10-21 15:42:50,643 ERROR Test checkOrderTemplateForm failed 
+2022-10-21 15:42:50,643 ERROR Test uploadFilesToOrder failed 
+2022-10-21 15:42:51,569 INFO  Remote browser is starting 
+2022-10-21 15:42:51,579 INFO  Test case: checkSendEnterpriseForm running 
+2022-10-21 15:42:51,579 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:42:51,579 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:42:51,586 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:51,586 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:51,586 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:51,586 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:51,586 ERROR Test checkSendEnterpriseForm failed 
+2022-10-21 15:42:51,586 ERROR Test checkSendEnterpriseForm failed 
+2022-10-21 15:42:51,707 INFO  Remote browser is starting 
+2022-10-21 15:42:51,720 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-10-21 15:42:51,720 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-10-21 15:42:51,720 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-10-21 15:42:51,720 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-10-21 15:42:51,720 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-10-21 15:42:51,730 ERROR Test checkSendBetaTesterFormWithValidData failed 
+2022-10-21 15:42:51,730 ERROR Test checkSendBetaTesterFormWithValidData failed 
+2022-10-21 15:42:51,730 ERROR Test checkSendBetaTesterFormWithInvalidData failed 
+2022-10-21 15:42:51,731 ERROR Test checkSendBetaTesterFormWithInvalidData failed 
+2022-10-21 15:42:51,731 ERROR Test sendFeedBackFormWithInvalidData failed 
+2022-10-21 15:42:51,730 ERROR Test sendFeedBackFormWithValidData failed 
+2022-10-21 15:42:51,731 ERROR Test sendFeedBackFormWithValidData failed 
+2022-10-21 15:42:51,731 ERROR Test shouldBePossibleOpenCloseCodeEditor failed 
+2022-10-21 15:42:51,731 ERROR Test shouldBePossibleOpenCloseCodeEditor failed 
+2022-10-21 15:42:51,731 ERROR Test sendFeedBackFormWithInvalidData failed 
+2022-10-21 15:42:51,732 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-10-21 15:42:51,739 ERROR Test shouldBePossibleToSwitchMobileDesktopMode failed 
+2022-10-21 15:42:51,739 ERROR Test shouldBePossibleToSwitchMobileDesktopMode failed 
+2022-10-21 15:42:52,579 INFO  Remote browser is starting 
+2022-10-21 15:42:52,587 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:42:52,587 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:42:52,595 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:52,595 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:42:52,595 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:52,595 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-10-21 15:42:52,598 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-21 15:42:52,598 INFO  Test case: sendGamificationForm running 
+2022-10-21 15:42:52,603 ERROR Test sendGamificationForm failed 
+2022-10-21 15:42:52,603 ERROR Test sendGamificationForm failed 
+2022-10-21 15:42:52,603 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-10-21 15:42:52,603 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-10-21 15:42:53,611 INFO  Remote browser is starting 
+2022-10-21 15:42:53,619 INFO  Test case: loginAdminTest running 
+2022-10-21 15:42:53,627 ERROR Test loginAdminTest failed 
+2022-10-21 15:42:53,627 ERROR Test loginAdminTest failed 
+2022-10-21 15:43:56,676 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:43:56,676 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-21 15:43:56,676 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:43:56,676 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-21 15:43:56,676 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-10-21 15:44:11,387 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:44:11,482 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-21 15:44:11,594 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-10-21 15:44:11,687 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-10-21 15:44:13,378 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:44:13,379 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:44:15,933 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-10-21 15:44:21,986 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:44:22,063 INFO  Test case: checkCarouselControls running 
+2022-10-21 15:44:22,101 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-21 15:44:22,475 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-21 15:44:25,094 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:26,626 INFO  Test checkCarouselControls passed 
+2022-10-21 15:44:26,724 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:44:26,911 INFO  Test sendCustomerStoriesForm passed 
+2022-10-21 15:44:26,995 INFO  Test case: sendCustomerStoriesForm running 
+2022-10-21 15:44:27,408 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:27,684 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:29,903 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:44:30,032 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:44:30,181 INFO  Test sendCustomerStoriesForm passed 
+2022-10-21 15:44:30,755 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:30,841 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:31,745 INFO  Test case: checkSendEnterpriseForm running 
+2022-10-21 15:44:31,919 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-21 15:44:32,070 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:44:32,258 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:32,341 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:34,387 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:44:34,488 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:44:34,557 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:34,652 INFO  Test paginationShouldWorkCorrectly passed 
+2022-10-21 15:44:34,760 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:34,962 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:44:35,585 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-10-21 15:44:36,424 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-21 15:44:36,518 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:36,611 INFO  Test case: uploadFilesToOrder running 
+2022-10-21 15:44:36,986 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:37,035 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-10-21 15:44:39,135 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:39,312 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:39,640 INFO  Test checkSendEnterpriseForm passed 
+2022-10-21 15:44:40,382 INFO  Test uploadFilesToOrder passed 
+2022-10-21 15:44:40,850 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:40,930 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-10-21 15:44:41,068 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-10-21 15:44:41,068 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-10-21 15:44:41,958 INFO  Test checkOrderTemplateForm passed 
+2022-10-21 15:44:41,960 INFO  Test case: checkOrderTemplateForm running 
+2022-10-21 15:44:44,674 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-10-21 15:44:44,747 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-10-21 15:44:45,519 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-10-21 15:44:45,877 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-10-21 15:44:46,303 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-10-21 15:44:46,625 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-10-21 15:44:48,965 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-10-21 15:44:49,054 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-10-21 15:44:49,395 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-10-21 15:44:50,556 INFO  Test checkOrderTemplateForm passed 
+2022-10-21 15:44:51,856 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:44:51,856 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:44:52,284 INFO  Test sendFeedBackFormWithValidData passed 
+2022-10-21 15:44:56,596 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:44:56,600 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-10-21 15:44:57,036 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-10-21 15:44:57,039 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-10-21 15:44:57,180 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-10-21 15:45:00,420 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-10-21 15:45:06,823 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-10-21 15:45:19,255 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-10-21 15:45:21,421 INFO  Test case: sendGamificationForm running 
+2022-10-21 15:45:21,422 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-21 15:45:24,387 INFO  Test sendEsputnikBookDemoFormTest passed 
+2022-10-21 15:45:24,514 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-10-21 15:45:26,063 INFO  Test sendEsputnikBookDemoFormTest passed 
+2022-10-21 15:45:39,016 ERROR Test sendGamificationForm failed 
+2022-10-21 15:45:40,221 INFO  Test case: sendGamificationForm running 
+2022-10-21 15:45:42,718 INFO  Test sendGamificationForm passed 
+2022-10-21 15:45:43,886 INFO  Test case: loginAdminTest running 
+2022-10-21 15:45:47,331 INFO  Test loginAdminTest passed 
+2022-10-21 15:45:47,333 INFO  Test case: createNewArticleDraftTest running 
+2022-10-21 15:45:53,452 INFO  Test createNewArticleDraftTest passed 
+2022-10-21 15:45:53,454 INFO  Test case: articleShouldPublishSuccessfully running 
+2022-10-21 15:45:59,419 INFO  Test articleShouldPublishSuccessfully passed 
+2022-10-21 15:45:59,421 INFO  Test case: articleShouldBeDelete running 
+2022-10-21 15:46:04,236 INFO  Test articleShouldBeDelete passed 
+2022-11-15 15:36:40,605 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-15 15:36:40,605 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:36:40,605 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:36:40,605 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-11-15 15:36:40,605 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-15 15:36:49,502 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-15 15:36:49,966 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-15 15:36:50,047 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-15 15:36:50,063 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-15 15:36:52,946 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:36:52,948 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:36:54,675 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-15 15:36:59,997 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-11-15 15:37:02,830 INFO  Test case: checkCarouselControls running 
+2022-11-15 15:37:04,445 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-15 15:37:07,115 INFO  Test checkCarouselControls passed 
+2022-11-15 15:37:07,203 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-15 15:37:08,785 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-11-15 15:37:09,247 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-11-15 15:37:09,863 INFO  Test sendCustomerStoriesForm passed 
+2022-11-15 15:37:09,948 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-15 15:37:12,827 INFO  Test paginationShouldWorkCorrectly passed 
+2022-11-15 15:37:13,303 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-11-15 15:37:13,635 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:37:13,635 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:37:13,635 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:37:13,920 INFO  Test sendCustomerStoriesForm passed 
+2022-11-15 15:37:16,332 INFO  Test case: checkSendEnterpriseForm running 
+2022-11-15 15:37:16,332 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:37:20,734 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-15 15:37:20,852 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:37:22,527 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-15 15:37:22,640 INFO  Test case: checkOrderTemplateForm running 
+2022-11-15 15:37:22,930 INFO  Test checkSendEnterpriseForm passed 
+2022-11-15 15:37:23,182 INFO  Test case: shouldBeSendOrderTemplateFormWithFile running 
+2022-11-15 15:37:28,039 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-11-15 15:37:28,151 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-11-15 15:37:28,309 INFO  Test checkOrderTemplateForm passed 
+2022-11-15 15:37:28,311 INFO  Test case: checkOrderTemplateForm running 
+2022-11-15 15:37:29,262 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:37:29,914 INFO  Test shouldBeSendOrderTemplateFormWithFile passed 
+2022-11-15 15:37:29,917 INFO  Test case: uploadFilesToOrder running 
+2022-11-15 15:37:31,325 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:37:33,127 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-11-15 15:37:33,127 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-11-15 15:37:33,662 INFO  Test uploadFilesToOrder passed 
+2022-11-15 15:37:33,667 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-11-15 15:37:34,771 INFO  Test checkOrderTemplateForm passed 
+2022-11-15 15:37:34,775 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-11-15 15:37:37,011 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-11-15 15:37:37,101 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-11-15 15:37:37,464 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-11-15 15:37:37,543 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-11-15 15:37:37,713 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-11-15 15:37:40,867 INFO  Test sendFeedBackFormWithValidData passed 
+2022-11-15 15:37:41,294 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:37:41,295 INFO  Test case: selectedCategoriesShouldBeSaved running 
+2022-11-15 15:37:44,505 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:37:46,447 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:37:51,123 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-15 15:37:51,127 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-15 15:37:55,638 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-15 15:37:55,641 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:37:56,075 ERROR Test selectedCategoriesShouldBeSaved failed 
+2022-11-15 15:37:57,594 ERROR Test selectedCategoriesShouldBeRemoved skipped 
+2022-11-15 15:37:58,789 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:37:58,921 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-15 15:37:58,922 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-15 15:38:00,124 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:38:00,326 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-11-15 15:38:03,166 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-11-15 15:38:03,519 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-15 15:38:14,936 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:38:15,951 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:38:27,175 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:38:27,938 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:38:38,433 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:38:39,721 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:38:50,896 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:38:51,337 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-15 15:39:01,741 ERROR Test seoTitleShouldBeTranslatedTest failed 
+2022-11-15 15:39:02,458 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-11-15 15:39:02,458 INFO  Test case: sendGamificationForm running 
+2022-11-15 15:39:12,987 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-11-15 15:39:13,005 ERROR Test sendGamificationForm failed 
+2022-11-15 15:39:13,728 INFO  Test case: sendGamificationForm running 
+2022-11-15 15:39:13,785 INFO  Test case: sendEsputnikBookDemoFormTest running 
+2022-11-15 15:39:24,011 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-11-15 15:39:24,011 ERROR Test sendGamificationForm failed 
+2022-11-15 15:39:24,013 ERROR Test sendEsputnikBookDemoFormTest failed 
+2022-11-15 15:39:24,013 ERROR Test sendGamificationForm failed 
+2022-11-15 15:39:24,366 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-11-15 15:39:24,370 ERROR Test loginAdminTest skipped 
+2022-11-15 15:39:24,372 ERROR Test createNewArticleDraftTest skipped 
+2022-11-15 15:39:24,375 ERROR Test articleShouldPublishSuccessfully skipped 
+2022-11-15 15:39:24,378 ERROR Test articleShouldBeDelete skipped 
+2022-11-15 16:24:55,135 INFO  Remote browser is starting 
+2022-11-15 16:25:50,082 INFO  Remote browser is starting 
+2022-11-28 12:13:42,502 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-11-28 12:41:51,573 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:41:51,573 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:41:51,573 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 12:41:51,573 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-11-28 12:41:51,573 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:42:01,704 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 12:42:01,845 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 12:42:04,585 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:42:04,729 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:42:07,283 ERROR Test paginationShouldWorkCorrectly failed 
+2022-11-28 12:42:11,528 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:42:11,528 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:42:12,943 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 12:42:15,621 INFO  Test case: checkCarouselControls running 
+2022-11-28 12:42:15,621 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 12:42:19,246 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 12:42:19,325 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 12:42:20,027 INFO  Test checkCarouselControls passed 
+2022-11-28 12:42:21,312 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:21,391 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 12:42:21,608 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:42:22,598 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:22,755 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:23,167 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-11-28 12:42:23,889 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:24,005 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:24,730 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:42:25,101 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:25,237 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:25,834 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:42:25,919 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:42:26,371 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:26,493 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:27,017 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-11-28 12:42:27,283 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:27,369 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:27,564 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-11-28 12:42:27,819 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:42:27,910 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:42:28,661 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:28,769 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:31,570 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:31,702 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:42:32,109 INFO  Test case: checkSendEnterpriseForm running 
+2022-11-28 12:42:32,110 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:42:32,691 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:42:32,900 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:42:33,148 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:42:33,150 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:42:33,782 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:42:33,837 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 12:42:35,675 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:42:35,842 INFO  Test case: shouldBeSendOrderTemplateFormWithFile running 
+2022-11-28 12:42:38,675 INFO  Test checkSendEnterpriseForm passed 
+2022-11-28 12:42:38,968 INFO  Test case: uploadFilesToOrder running 
+2022-11-28 12:42:38,981 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:42:39,425 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:42:40,295 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-11-28 12:42:40,295 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-11-28 12:42:41,367 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 12:42:41,369 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 12:42:42,322 INFO  Test uploadFilesToOrder passed 
+2022-11-28 12:42:42,326 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-11-28 12:42:42,473 INFO  Test shouldBeSendOrderTemplateFormWithFile passed 
+2022-11-28 12:42:42,477 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-11-28 12:42:45,788 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-11-28 12:42:45,931 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-11-28 12:42:45,991 INFO  Test sendFeedBackFormWithValidData passed 
+2022-11-28 12:42:46,146 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-11-28 12:42:46,343 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-11-28 12:42:46,819 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-11-28 12:42:47,528 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 12:42:48,337 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 12:42:48,338 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:42:48,337 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 12:42:58,047 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:42:58,303 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:43:00,992 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-11-28 12:43:01,096 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:43:05,092 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 12:43:05,196 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-11-28 12:43:05,202 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 12:43:05,533 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:43:11,162 INFO  Test openedTemplateShouldHaveSelectedCategoriesTest passed 
+2022-11-28 12:43:11,262 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 12:43:11,556 ERROR Test templateFiltersShouldWorkCorrectlyTest failed 
+2022-11-28 12:43:12,892 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:43:12,975 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:43:16,304 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:43:16,413 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:43:19,871 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:43:20,390 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 12:43:21,793 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:43:22,129 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:43:24,743 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:43:27,820 INFO  Test openedTemplateShouldHaveSelectedCategoriesTest passed 
+2022-11-28 12:43:28,018 INFO  Test case: sendGamificationForm running 
+2022-11-28 12:43:42,781 ERROR Test sendGamificationForm failed 
+2022-11-28 12:43:43,953 INFO  Test case: sendGamificationForm running 
+2022-11-28 12:43:45,918 INFO  Test sendGamificationForm passed 
+2022-11-28 12:43:47,652 INFO  Test case: loginAdminTest running 
+2022-11-28 12:43:50,868 INFO  Test loginAdminTest passed 
+2022-11-28 12:43:50,870 INFO  Test case: createNewArticleDraftTest running 
+2022-11-28 12:43:56,634 INFO  Test createNewArticleDraftTest passed 
+2022-11-28 12:43:56,635 INFO  Test case: articleShouldPublishSuccessfully running 
+2022-11-28 12:44:06,825 INFO  Test articleShouldPublishSuccessfully passed 
+2022-11-28 12:44:06,827 INFO  Test case: articleShouldBeDelete running 
+2022-11-28 12:44:10,034 INFO  Test articleShouldBeDelete passed 
+2022-11-28 12:48:27,859 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 12:48:27,859 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:48:27,859 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-11-28 12:48:27,859 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:48:27,859 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:48:38,203 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 12:48:38,313 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:48:38,548 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 12:48:38,581 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:48:40,264 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:48:40,264 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:48:44,346 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:48:44,437 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:48:44,614 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 12:48:49,272 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:48:49,720 INFO  Test case: checkCarouselControls running 
+2022-11-28 12:48:49,722 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 12:48:50,444 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:48:52,337 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:48:53,089 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 12:48:53,156 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 12:48:53,562 INFO  Test checkCarouselControls passed 
+2022-11-28 12:48:53,635 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:48:54,112 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:48:54,311 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:48:56,853 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 12:48:57,127 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:48:57,796 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:48:58,235 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:48:59,182 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:48:59,980 INFO  Test paginationShouldWorkCorrectly passed 
+2022-11-28 12:49:00,197 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:49:00,220 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:00,334 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:49:00,368 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:49:00,698 INFO  Test case: checkSendEnterpriseForm running 
+2022-11-28 12:49:00,698 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:49:03,032 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:49:03,121 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:49:03,909 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:04,007 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:49:06,226 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:06,570 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:49:06,693 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:49:06,735 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:49:08,215 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:08,241 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:49:08,313 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:49:08,416 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 12:49:08,472 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:49:08,532 INFO  Test case: shouldBeSendOrderTemplateFormWithFile running 
+2022-11-28 12:49:08,570 INFO  Test checkSendEnterpriseForm passed 
+2022-11-28 12:49:08,978 INFO  Test case: uploadFilesToOrder running 
+2022-11-28 12:49:09,892 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:49:10,821 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:11,200 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 12:49:11,515 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-11-28 12:49:12,332 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 12:49:13,794 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-11-28 12:49:15,404 INFO  Test uploadFilesToOrder passed 
+2022-11-28 12:49:15,407 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-11-28 12:49:16,033 INFO  Test shouldBeSendOrderTemplateFormWithFile passed 
+2022-11-28 12:49:16,035 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-11-28 12:49:18,392 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 12:49:18,397 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 12:49:19,002 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-11-28 12:49:19,227 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-11-28 12:49:19,654 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-11-28 12:49:19,852 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-11-28 12:49:20,793 INFO  Test sendFeedBackFormWithValidData passed 
+2022-11-28 12:49:23,320 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 12:49:24,799 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 12:49:24,802 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 12:49:33,129 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 12:49:33,241 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 12:49:33,465 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-11-28 12:49:33,562 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:49:38,323 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-11-28 12:49:38,398 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:49:38,468 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-11-28 12:49:38,839 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:49:39,597 ERROR Test templateFiltersShouldWorkCorrectlyTest failed 
+2022-11-28 12:49:44,054 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 12:49:44,809 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:49:44,815 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:49:44,972 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 12:49:46,424 ERROR Test openedTemplateShouldHaveSelectedCategoriesTest failed 
+2022-11-28 12:49:48,479 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 12:49:48,586 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:49:48,689 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 12:49:48,717 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 12:49:49,132 ERROR Test templateFiltersShouldWorkCorrectlyTest failed 
+2022-11-28 12:49:51,843 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 12:49:52,795 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 12:49:57,414 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 12:49:59,671 INFO  Test openedTemplateShouldHaveSelectedCategoriesTest passed 
+2022-11-28 12:49:59,855 INFO  Test case: sendGamificationForm running 
+2022-11-28 12:50:08,435 INFO  Test sendGamificationForm passed 
+2022-11-28 12:50:08,488 INFO  Test case: sendGamificationForm running 
+2022-11-28 12:50:11,943 INFO  Test sendGamificationForm passed 
+2022-11-28 12:50:13,192 INFO  Test case: loginAdminTest running 
+2022-11-28 12:50:16,606 INFO  Test loginAdminTest passed 
+2022-11-28 12:50:16,607 INFO  Test case: createNewArticleDraftTest running 
+2022-11-28 12:50:22,263 INFO  Test createNewArticleDraftTest passed 
+2022-11-28 12:50:22,265 INFO  Test case: articleShouldPublishSuccessfully running 
+2022-11-28 12:50:28,892 INFO  Test articleShouldPublishSuccessfully passed 
+2022-11-28 12:50:28,893 INFO  Test case: articleShouldBeDelete running 
+2022-11-28 12:50:32,665 INFO  Test articleShouldBeDelete passed 
+2022-11-28 12:55:11,238 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-11-28 12:56:17,050 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
+2022-11-28 13:04:39,080 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:04:39,080 INFO  Test case: paginationShouldWorkCorrectly running 
+2022-11-28 13:04:39,080 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 13:04:39,080 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:04:39,080 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 13:04:50,303 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:04:50,303 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 13:04:50,474 INFO  Test case: shouldBePossibleToFindArticlesOnDifferentLocale running 
+2022-11-28 13:04:50,549 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:04:52,504 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:04:52,504 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:04:54,684 INFO  Test shouldBePossibleToFindArticlesOnDifferentLocale passed 
+2022-11-28 13:05:01,963 INFO  Test case: checkCarouselControls running 
+2022-11-28 13:05:08,396 ERROR Test verifySentSubscribeFormWithInvalidDataTest failed 
+2022-11-28 13:05:08,629 ERROR Test verifySentSubscribeFormWithValidDataTest failed 
+2022-11-28 13:05:12,076 ERROR Test categoryFiltersShouldWorkCorrectlyTest failed 
+2022-11-28 13:05:14,274 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 13:05:14,948 INFO  Test case: categoryFiltersShouldWorkCorrectlyTest running 
+2022-11-28 13:05:16,187 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:16,237 INFO  Test checkCarouselControls passed 
+2022-11-28 13:05:16,345 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:05:17,501 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 13:05:17,605 INFO  Test case: sendCustomerStoriesForm running 
+2022-11-28 13:05:17,687 INFO  Test paginationShouldWorkCorrectly passed 
+2022-11-28 13:05:17,793 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:05:19,587 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:19,817 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:22,590 INFO  Test sendCustomerStoriesForm passed 
+2022-11-28 13:05:22,754 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:22,911 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:23,049 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:05:23,183 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:05:24,098 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:05:24,182 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:05:24,382 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:24,473 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:25,250 INFO  Test case: checkSendEnterpriseForm running 
+2022-11-28 13:05:25,504 INFO  Test categoryFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 13:05:26,907 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:27,037 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:27,051 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:05:27,149 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:05:27,284 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:05:28,622 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:28,961 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:05:28,985 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:29,113 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 13:05:30,634 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:05:30,777 INFO  Test case: shouldBeSendOrderTemplateFormWithFile running 
+2022-11-28 13:05:31,642 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:31,935 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:33,493 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:33,619 INFO  Test case: seoTitleShouldBeTranslatedTest running 
+2022-11-28 13:05:34,537 INFO  Test checkSendEnterpriseForm passed 
+2022-11-28 13:05:34,642 INFO  Test case: uploadFilesToOrder running 
+2022-11-28 13:05:34,945 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:05:35,958 INFO  Test seoTitleShouldBeTranslatedTest passed 
+2022-11-28 13:05:36,959 INFO  Test shouldBeSendOrderTemplateFormWithFile passed 
+2022-11-28 13:05:37,129 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 13:05:37,132 INFO  Test case: checkOrderTemplateForm running 
+2022-11-28 13:05:37,308 INFO  Test case: sendFeedBackFormWithInvalidData running 
+2022-11-28 13:05:37,308 INFO  Test case: checkSendBetaTesterFormWithInvalidData running 
+2022-11-28 13:05:37,312 INFO  Test case: checkSendBetaTesterFormWithValidData running 
+2022-11-28 13:05:41,078 INFO  Test uploadFilesToOrder passed 
+2022-11-28 13:05:41,081 INFO  Test case: sendFeedBackFormWithValidData running 
+2022-11-28 13:05:42,973 INFO  Test checkOrderTemplateForm passed 
+2022-11-28 13:05:42,977 INFO  Test case: shouldBePossibleOpenCloseCodeEditor running 
+2022-11-28 13:05:43,576 INFO  Test sendFeedBackFormWithInvalidData passed 
+2022-11-28 13:05:43,707 INFO  Test case: shouldBePossibleToSwitchMobileDesktopMode running 
+2022-11-28 13:05:43,793 INFO  Test checkSendBetaTesterFormWithValidData passed 
+2022-11-28 13:05:44,311 INFO  Test checkSendBetaTesterFormWithInvalidData passed 
+2022-11-28 13:05:46,258 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 13:05:46,259 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 13:05:55,111 INFO  Test shouldBePossibleOpenCloseCodeEditor passed 
+2022-11-28 13:05:55,355 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 13:05:58,826 INFO  Test shouldBePossibleToSwitchMobileDesktopMode passed 
+2022-11-28 13:05:59,264 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:06:00,165 INFO  Test sendFeedBackFormWithValidData passed 
+2022-11-28 13:06:00,468 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:06:01,943 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 13:06:02,061 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 13:06:09,893 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 13:06:10,242 INFO  Test case: shouldBePossibleToFindTemplateOnDifferentLocaleTest running 
+2022-11-28 13:06:11,842 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:06:11,923 INFO  Test case: verifySentSubscribeFormWithInvalidDataTest running 
+2022-11-28 13:06:13,374 INFO  Test openedTemplateShouldHaveSelectedCategoriesTest passed 
+2022-11-28 13:06:13,487 INFO  Test case: openedTemplateShouldHaveSelectedCategoriesTest running 
+2022-11-28 13:06:14,862 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 13:06:15,106 INFO  Test case: templateFiltersShouldWorkCorrectlyTest running 
+2022-11-28 13:06:18,247 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:06:18,394 INFO  Test case: verifySentSubscribeFormWithValidDataTest running 
+2022-11-28 13:06:18,693 INFO  Test verifySentSubscribeFormWithInvalidDataTest passed 
+2022-11-28 13:06:19,448 INFO  Test templateFiltersShouldWorkCorrectlyTest passed 
+2022-11-28 13:06:21,102 INFO  Test shouldBePossibleToFindTemplateOnDifferentLocaleTest passed 
+2022-11-28 13:06:23,417 INFO  Test verifySentSubscribeFormWithValidDataTest passed 
+2022-11-28 13:06:26,594 INFO  Test openedTemplateShouldHaveSelectedCategoriesTest passed 
+2022-11-28 13:06:26,808 INFO  Test case: sendGamificationForm running 
+2022-11-28 13:06:31,089 INFO  Test sendGamificationForm passed 
+2022-11-28 13:06:31,173 INFO  Test case: sendGamificationForm running 
+2022-11-28 13:06:33,542 INFO  Test sendGamificationForm passed 
+2022-11-28 13:06:34,912 INFO  Test case: loginAdminTest running 
+2022-11-28 13:06:38,379 INFO  Test loginAdminTest passed 
+2022-11-28 13:06:38,381 INFO  Test case: createNewArticleDraftTest running 
+2022-11-28 13:06:44,543 INFO  Test createNewArticleDraftTest passed 
+2022-11-28 13:06:44,545 INFO  Test case: articleShouldPublishSuccessfully running 
+2022-11-28 13:06:52,017 INFO  Test articleShouldPublishSuccessfully passed 
+2022-11-28 13:06:52,019 INFO  Test case: articleShouldBeDelete running 
+2022-11-28 13:06:55,192 INFO  Test articleShouldBeDelete passed 

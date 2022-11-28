@@ -1,6 +1,10 @@
 import commons.data.User;
 import org.testng.annotations.DataProvider;
 
+import static commons.data.dataPage.Lang.EN;
+import static commons.data.dataPage.Lang.RU;
+import static commons.data.dataPage.Lang.UA;
+
 public class DataProviderForm {
 
     @DataProvider(name = "esputnikSubscribeForm")
@@ -48,6 +52,14 @@ public class DataProviderForm {
         return new Object[][] {
                 {User.getInvalidEmail(), "Email is invalid"},
                 {"", "Required field"}
+        };
+    }
+
+    @DataProvider(name = "keyWord")
+    public Object[][] keyWord() {
+        return new Object[][]{
+                {EN, "Black Friday"},
+                {UA, "Чорна п'ятниця"}
         };
     }
 

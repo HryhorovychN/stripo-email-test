@@ -50,15 +50,8 @@ public class BlogTest extends BaseTest {
                 .checkArticleItemCategories(blogCategories);
     }
 
-    @DataProvider(name = "keyWord")
-    public Object[][] keyWord() {
-        return new Object[][]{
-                {EN, "Black Friday"},
-                {RU, "версия"}
-        };
-    }
 
-    @Test(dataProvider = "keyWord")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "keyWord")
     public void shouldBePossibleToFindArticlesOnDifferentLocale(Lang language, String keyWord) {
         App
                 .openBlogPage(language)

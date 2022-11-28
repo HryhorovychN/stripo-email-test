@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class HomePage extends BasePage {
 
     public HomePage checkOnPage(Lang locale, String expectedText) {
-        return super.checkOnPage(locale, $("h1.text-center"), expectedText, HomePage.class);
+        return super.checkOnPage(locale, $(".page-home__banner-left"), expectedText, HomePage.class);
     }
 
     public HomePage checkTitlePage(Lang locale, String expectedTitle) {

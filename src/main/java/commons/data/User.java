@@ -31,6 +31,8 @@ public class User {
 
     public static String getRandomTitle() {return String.format("TestTitle%s", random.nextInt(100));}
 
+    public static int getRandomInxBySize(int size) {return random.nextInt(size);}
+
 
 
 }

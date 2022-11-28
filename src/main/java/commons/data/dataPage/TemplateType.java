@@ -1,9 +1,9 @@
 package commons.data.dataPage;
 
 public enum TemplateType {
-    ALL("[data-type=\"all\"]"),
-    PREMIUM("[data-type=\"premium\"]"),
-    FREE("[data-type=\"free\"]");
+    ALL(""),
+    PREMIUM("[name=\"is_premium\"]"),
+    FREE("[name=\"is_free\"]");
 
     private final String type;
 

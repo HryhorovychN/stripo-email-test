@@ -6,7 +6,9 @@ import commons.data.dataPage.Lang;
 import commons.Driver;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import java.io.File;
 import java.util.List;
@@ -32,7 +34,7 @@ public class BasePage extends FrameAction {
 
     protected <T> T checkTitlePage(Lang locale, String expectedTitle, Class<T> classToReturn) {
         String currentTitle = Driver.currentDriver().getTitle();
-        currentTitle = expectedTitle;
+        Assert.assertEquals(currentTitle, expectedTitle);
         return page(classToReturn);
     }
 
