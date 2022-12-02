@@ -59,9 +59,14 @@ public class App {
         return openPage(locale, Const.NEW_EDITOR, NewEditorPage.class);
     }
 
-    public static BlogPage openPricingPage(Lang locale) {
-        return openPage(locale, Const.PLUGIN, BlogPage.class);
+    public static PricingPage openPricingPage(Lang locale) {
+        return openPage(locale, Const.PRICING, PricingPage.class);
     }
+
+    public static TemplateGeneratorPage openTemplateGeneratorPage(Lang locale) {
+        return openPage(locale, Const.TEMPLATE_GENERATOR, TemplateGeneratorPage.class);
+    }
+
 
     /* Admin pages */
     public static AdminPage openAdminLoginPage() {

@@ -6,21 +6,21 @@ import static commons.data.dataPage.Lang.EN;
 
 public class PricingPageTest extends BaseTest {
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForNewSubscribeForm")
     @Description("This test verify sent subscribe form with valid data")
     public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
         App
                 .openPricingPage(EN)
-                .sendSubscribeForm(email)
-                .checkSubscribeFormMessage(message);
+                .sendShadowRootSubscribeForm(email)
+                .checkMessageShadowRootSubscribeForm(message);
     }
 
-    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
+    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForNewSubscribeForm")
     @Description("This test verify sent subscribe form with invalid data")
     public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
         App
                 .openPricingPage(EN)
-                .sendSubscribeForm(email)
-                .checkSubscribeFormMessage(message);
+                .sendShadowRootSubscribeForm(email)
+                .checkErrorTooltipShadowRootSubscribeForm(message);
     }
 }

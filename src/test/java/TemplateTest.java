@@ -54,7 +54,7 @@ public class TemplateTest extends BaseTest {
     @DataProvider(name = "templateCategory")
     public Object[][] TemplateCategory() {
         return new Object[][]{
-                {"Type", List.of("Holidays", "Abandoned Cart"), "Industry", List.of("Auto & Moto")},
+                {"Type", List.of("Holidays", "Abandoned Cart"), "Industry", List.of("Hobbies")},
                 {"Seasons", List.of("Black Friday", "Feature"), "Feature", List.of("CSS Animations", "Countdown timer")}
 
         };

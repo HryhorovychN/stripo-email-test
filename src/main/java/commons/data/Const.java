@@ -13,6 +13,8 @@ public class Const {
     public static final String AMP_EXAMPLE = "/amp-examples";
     public static final String NEW_EDITOR = "/new";
     public static final String PRICING = "/pricing";
+    public static final String TEMPLATE_GENERATOR = "/template-generator-tool";
+
 
 
     /* Admin pages url */

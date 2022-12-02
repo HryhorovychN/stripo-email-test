@@ -7,7 +7,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
-import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,9 +14,10 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Date;
-import java.util.List;
-import java.util.logging.Level;
 
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 @Log4j
 public class Driver {
@@ -37,6 +37,11 @@ public class Driver {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static Object executeJS(String script) {
+        JavascriptExecutor js = (JavascriptExecutor) getWebDriver();
+        return js.executeScript(script);
     }
 
     public static void waitForUrlContains(String urlChunk) {

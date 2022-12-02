@@ -45,31 +45,5 @@ public class HomeTest extends BaseTest {
                 .openHomePage(locale)
                 .checkTitlePage(locale, expectedTitle);
     }
-//
-//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "validDataForEmailForm")
-//    @Description("This test verify sent subscribe form with valid data")
-//    public void verifySentSubscribeFormWithValidDataTest(String email, String message) {
-//        App
-//                .openHomePage(EN)
-//                .sendSubscribeForm(email)
-//                .checkSubscribeFormMessage(message);
-//    }
-//
-//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "invalidDataForEmailForm")
-//    @Description("This test verify sent subscribe form with invalid data")
-//    public void verifySentSubscribeFormWithInvalidDataTest(String email, String message) {
-//        App
-//                .openHomePage(EN)
-//                .sendSubscribeForm(email)
-//                .checkSubscribeFormMessage(message);
-//    }
-//
-//    @Test(dataProviderClass = DataProviderForm.class, dataProvider = "esputnikSubscribeForm", priority = 2)
-//    public void sendEsputnikBookDemoFormTest(String email, String message) {
-//        App
-//                .openHomePage(UA)
-//                .sendEsputnikForm(email)
-//                .checkEsputnikMessage(message);
-//    }
 
 }

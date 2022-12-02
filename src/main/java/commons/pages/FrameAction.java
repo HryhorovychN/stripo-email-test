@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.shadowCss;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.switchTo;
 
 public class FrameAction {
@@ -18,6 +19,7 @@ public class FrameAction {
     private static final String CODE_EDITOR_FRAME_SELECTOR = "ue-code-editor-container iframe";
     private static final SelenideElement SHADOW_ROOT_EDITOR_FRAME = $(shadowCss(EDITOR_FRAME_SELECTOR, "#stripoEditorContainer ui-editor"));
     private static final SelenideElement SHADOW_ROOT_CODE_EDITOR_FRAME = $(shadowCss(CODE_EDITOR_FRAME_SELECTOR, "#stripoEditorContainer ui-editor"));
+    private static final String TEMPLATE_PREVIEW_SELECTOR = ".template-item-inner";
 
     public void doInEditorFrame(Runnable r) {
         doInFrame(() -> SHADOW_ROOT_EDITOR_FRAME.shouldBe(visible), ()->{
@@ -47,6 +49,13 @@ public class FrameAction {
         });
     }
 
+    public void doInTemplatePreviewFrame(Runnable r) {
+        doInFrame(() -> getTemplatePreviewSelector().shouldBe(visible), () -> {
+            r.run();
+            return null;
+        });
+    }
+
 
     protected <T> T doInFrame(Supplier<SelenideElement> elementGetter, FrameRunner<T> f) {
         switchTo().defaultContent();
@@ -63,6 +72,8 @@ public class FrameAction {
     private String getArticleContentSelector() {
         return ARTICLE_CONTENT_SELECTOR;
     }
+
+    private SelenideElement getTemplatePreviewSelector() {return $(".template-item-inner");}
 
 
 
