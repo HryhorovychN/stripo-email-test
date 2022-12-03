@@ -11,7 +11,7 @@ import lombok.extern.apachecommons.CommonsLog;
 public class RunnerConfig {
 
     public void setUpConfig(String browser) {
-        boolean modeDebug = true;
+        boolean modeDebug = false;
 
         Configuration.pageLoadStrategy = "eager";
         Configuration.startMaximized = true;
