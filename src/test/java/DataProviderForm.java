@@ -42,8 +42,7 @@ public class DataProviderForm {
     @DataProvider(name = "validDataForNewSubscribeForm")
     public static Object[][] validDataForNewSubscribeForm() {
         return new Object[][] {
-                {User.getValidTestEmail(), "THANKS FOR SUBSCRIBE"},
-                {"support@stripo.email", "YOU’RE ALREADY SUBSCRIBED"}
+                {User.getValidTestEmail(), "THANKS FOR SUBSCRIBE"}
         };
     }
 

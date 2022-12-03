@@ -43,7 +43,7 @@ public class HomeTest extends BaseTest {
     public void seoTitleShouldBeTranslatedTest(Lang locale, String expectedTitle) {
         App
                 .openHomePage(locale)
-                .checkTitlePage(locale, expectedTitle);
+                .checkTitlePage(expectedTitle);
     }
 
 }

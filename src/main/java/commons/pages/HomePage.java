@@ -10,8 +10,8 @@ public class HomePage extends BasePage {
         return super.checkOnPage(locale, $(".page-home__banner-left"), expectedText, HomePage.class);
     }
 
-    public HomePage checkTitlePage(Lang locale, String expectedTitle) {
-        return super.checkTitlePage(locale, expectedTitle, HomePage.class);
+    public HomePage checkTitlePage(String expectedTitle) {
+        return checkTitlePage(expectedTitle, HomePage.class);
     }
 
 }

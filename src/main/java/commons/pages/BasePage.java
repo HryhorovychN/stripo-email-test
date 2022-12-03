@@ -32,7 +32,8 @@ public class BasePage extends FrameAction {
         return page(classToReturn);
     }
 
-    protected <T> T checkTitlePage(Lang locale, String expectedTitle, Class<T> classToReturn) {
+    protected <T> T checkTitlePage(String expectedTitle, Class<T> classToReturn) {
+        sleep(500);
         String currentTitle = Driver.currentDriver().getTitle();
         Assert.assertEquals(currentTitle, expectedTitle);
         return page(classToReturn);
