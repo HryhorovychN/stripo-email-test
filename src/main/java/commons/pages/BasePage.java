@@ -1,6 +1,7 @@
 package commons.pages;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import commons.data.dataPage.Lang;
 import commons.Driver;
@@ -34,7 +35,7 @@ public class BasePage extends FrameAction {
 
     protected <T> T checkTitlePage(String expectedTitle, Class<T> classToReturn) {
         sleep(500);
-        String currentTitle = Driver.currentDriver().getTitle();
+        String currentTitle = Selenide.title();
         Assert.assertEquals(currentTitle, expectedTitle);
         return page(classToReturn);
     }

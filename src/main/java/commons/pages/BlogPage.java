@@ -114,7 +114,7 @@ public class BlogPage extends BasePage {
     @Step("Check previous next button")
     public BlogPage clickNextButton() {
         $("#load-article-nav [alt='arrow next']").parent().click();
-        sleep(300);
+        sleep(500);
         return this;
     }
 
@@ -123,7 +123,7 @@ public class BlogPage extends BasePage {
         $$("#load-article-nav .pagination li").findBy(Condition.have
                 (Condition.text(String.valueOf(pageNumber))))
                 .click();
-        sleep(300);
+        sleep(500);
         return this;
     }
 
@@ -136,7 +136,7 @@ public class BlogPage extends BasePage {
 
     @Step("Check the articles count")
     public BlogPage checkArticleItemCount(int count) {
-        sleep(1500);
+        sleep(2000);
         Assert.assertEquals(getArticleItemCount(), count);
         return this;
     }

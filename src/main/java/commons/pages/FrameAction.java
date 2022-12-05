@@ -73,7 +73,7 @@ public class FrameAction {
         return ARTICLE_CONTENT_SELECTOR;
     }
 
-    private SelenideElement getTemplatePreviewSelector() {return $(".template-item-inner");}
+    private SelenideElement getTemplatePreviewSelector() {return $(TEMPLATE_PREVIEW_SELECTOR);}
 
 
 

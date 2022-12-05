@@ -43,7 +43,7 @@ public class TemplatePage extends BasePage {
 
 
     public void checkTemplatesType(TemplateType templateType) {
-        sleep(2000);
+        sleep(2500);
         switch (templateType) {
             case PREMIUM:
                 Assert.assertFalse(getTemplates().isEmpty());
