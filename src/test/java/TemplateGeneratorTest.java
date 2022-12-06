@@ -1,51 +1,51 @@
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
 import commons.App;
-import commons.data.dataPage.TemplatePreview;
-import commons.pages.TemplateGeneratorPage;
 import org.testng.annotations.Test;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
 import static commons.data.dataPage.Lang.EN;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.BUTTON;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.FONT;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.FOOTER;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.GENERAL_BACKGROUND;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.HEADER;
-import static commons.pages.TemplateGeneratorPage.EntityColorName.LINK;
+
 
 public class TemplateGeneratorTest extends BaseTest {
 
     @Test
-    public void shouldBePossibleToParseSite() {
+    public void shouldBePossibleParseSiteAndChangeStyle() {
+        SelenideElement header = $(".es-header-body");
+        SelenideElement content = $(".es-content-body");
+        SelenideElement footer = $(".es-footer-body");
+        SelenideElement preview =$(".es-wrapper");
+
         App
                 .openTemplateGeneratorPage(EN)
-                .setSiteUrl("https://esputnik.com/uk")
+                .setSiteUrl("https://kyivstar.ua/")
                 .clickTuneUpStyle()
-                .setBrandingName("Stripo")
-                .setAddress("Dnipro")
+                .setBrandingName("TestBrandName")
+                .setAddress("DniproTestAddress")
                 .setEmail("dnipro.com")
-                .setPhone("0999846085")
-                .setLogo("https://vjoy.cc/wp-content/uploads/2020/06/white-and-black-panda-illustration-png-clip-art.pngq")
+                .setPhone("111111111")
                 .clickStyleTab()
-                .setColor(GENERAL_BACKGROUND, "#DD13EC")
-                .setColor(HEADER, "#06D0CC")
-                .setColor(FOOTER, "#0340CE")
-                .setColor(BUTTON, "#40D600")
-                .setColor(FONT, "#F60404")
-                .setColor(LINK, "#E0C40B")
-                .getPreview();
-//                .checkTemplatePreview(TemplatePreview
-//                        .builder()
-//                        .brandName("Stripo")
-//                        .address("Dnipro")
-//                        .email("dnipro.com")
-//                        .phone("0999846085")
-//                        .generalBackgroundColor("DD13EC")
-//                        .headerColor("06D0CC")
-//                        .fontColor("F60404")
-//                        .buttonColor("40D600")
-//                        .headerColor("06D0CC")
-//                        .linkColor("E0C40B")
-//                        .footerColor("DD13EC")
-//                        .build());
+                .setGeneralBackgroundColor("#DD13EC")
+                .setHeaderBackgroundColor("#06D0CC")
+                .setFooterBackgroundColor("#0340CE")
+                .setButtonColor("#40D600")
+                .setFontColor("#F60404")
+                .setLinksColor("#E0C40B")
+                .setFontName("Secular One")
+                .setHeaderFontNameName("Petemoss")
+                .getPreview()
+                .checkPreviewStyleValue(header, "background-color", "rgb(6, 208, 204)")
+                .checkPreviewStyleValue(preview, "background-color", "rgb(221, 19, 236)")
+                .checkPreviewStyleValue(footer, "background-color", "rgb(3, 64, 206)")
+                .checkPreviewStyleValue(content.$(".esd-block-button span"), "background", "rgb(64, 214, 0)")
+                .checkPreviewStyleValue(header.$("a"), "color", "rgb(224, 196, 11)")
+                .checkPreviewStyleValue(content.$("h1"), "font-family", "Petemoss")
+                .checkPreviewStyleValue(content.$("p"), "color", "rgb(246, 4, 4)")
+                .checkPreviewStyleValue(content.$("p"), "font-family", "\"Secular One\"")
+                .checkPreviewStyleValue(content.$("a"), "color", "rgb(0, 135, 230)")
+                .checkPreviewStyleValue(footer.$("p"), "color", "rgb(246, 4, 4)")
+                .checkPreviewStyleValue(footer.$("a"), "color", "rgb(224, 196, 11)");
     }
 }

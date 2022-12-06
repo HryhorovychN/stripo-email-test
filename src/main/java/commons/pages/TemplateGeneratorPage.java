@@ -3,24 +3,22 @@ package commons.pages;
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import commons.Driver;
-import commons.data.dataPage.TemplatePreview;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.testng.Assert;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.actions;
 import static com.codeborne.selenide.Selenide.element;
-import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.page;
 import static com.codeborne.selenide.Selenide.sleep;
-import static commons.Driver.currentDriver;
-import static commons.Driver.executeJs;
 
 public class TemplateGeneratorPage extends BasePage {
 
@@ -66,68 +64,80 @@ public class TemplateGeneratorPage extends BasePage {
 
     public static class StylesComponent extends TemplateGeneratorPage {
 
-        public StylesComponent setColor(EntityColorName entity, String color) {
-            ElementsCollection colorInputs = $$(".template-generator-tune-tab .input-color-value");
-            colorInputs.get(entity.getEntity()).clear();
-            colorInputs.get(entity.getEntity()).click();
-            colorInputs.get(entity.getEntity()).sendKeys(color);
-            sleep(1000);
+        private void setColor(SelenideElement input, String color) {
+            input.parent().parent().$(".input-color-value").click();
+            input.parent().parent().$(".input-color-value").sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
+            input.parent().parent().$(".input-color-value").shouldBe(Condition.visible).setValue(color);
+        }
+
+        public StylesComponent setGeneralBackgroundColor(String color) {
+            setColor($("#generalBackgroundColor"), color);
             return page(StylesComponent.class);
         }
 
-        public StylesComponent setFontStyle(String fontStyle) {
-            $(By.id("fontName")).shouldBe(Condition.visible).setValue(fontStyle);
-            sleep(1000);
+        public StylesComponent setHeaderBackgroundColor(String color) {
+            setColor($("#headerBackgroundColor"), color);
             return page(StylesComponent.class);
         }
 
-        public StylesComponent setHeaderFontStyle(String headerFontStyle) {
-            $(By.id("headerFontName")).shouldBe(Condition.visible).setValue(headerFontStyle);
-            sleep(1000);
+        public StylesComponent setFooterBackgroundColor(String color) {
+            setColor($("#footerBackgroundColor"), color);
+            return page(StylesComponent.class);
+
+        }
+
+        public StylesComponent setButtonColor(String color) {
+            setColor($("#buttonColor"), color);
             return page(StylesComponent.class);
         }
-    }
 
-    public enum EntityColorName {
+        public StylesComponent setFontColor(String color) {
+            setColor($("#fontColor"), color);
+            return page(StylesComponent.class);
+        }
 
-        GENERAL_BACKGROUND(0), HEADER(1), FOOTER(2), BUTTON(3), FONT(4), LINK(5);
+        public StylesComponent setLinksColor(String color) {
+            setColor($("#linksColor"), color);
+            return page(StylesComponent.class);
+        }
 
-        private final int entity;
 
-        EntityColorName(int entity) {this.entity = entity;}
+        public StylesComponent setFontName(String fontName) {
+            sleep(1000);
+                $("#fontName").shouldBe(Condition.visible).setValue(fontName);
+                $("#fontName").parent().$(".active").click();
+            return this;
+        }
 
-        public int getEntity() {
-            return entity;
+        public StylesComponent setHeaderFontNameName(String fontName) {
+            sleep(1000);
+                $("#headerFontName").shouldBe(Condition.visible).setValue(fontName);
+                $("#headerFontName").parent().$(".active").click();
+            return this;
         }
     }
 
 
 public static class PreviewComponent extends TemplateGeneratorPage {
 
+    public PreviewComponent checkPreviewStyleValue(SelenideElement element, String attribute, String value) {
+        sleep(1500);
+        doInTemplatePreviewFrame(() -> {
+            List<String> allStyles = Arrays.asList(element.getAttribute("style").split(";"));
+            Map<String, String> mapStyles;
+            mapStyles = allStyles.stream().map(s -> s.split(":")).collect(Collectors.toMap(s -> s[0].trim(), s -> s[1].trim()));
+            System.out.println(mapStyles);
+            Assert.assertEquals(mapStyles.get(attribute), value);
+        });
+        return this;
+    }
 
-    public PreviewComponent checkTemplatePreview(TemplatePreview control) {
-            doInTemplatePreviewFrame(() -> {
-                SelenideElement header = $(".es-wrapper-color .es-header-body");
-                SelenideElement content = $(".es-content-body");
-                SelenideElement footer = $(".es-footer-body");
-                SelenideElement preview =$(".es-wrapper");
-
-                header.shouldHave(Condition.text(control.getEmail()));
-                header.shouldHave(Condition.text(control.getPhone()));
-                header.find("img").shouldBe(Condition.visible);
-                content.shouldHave(Condition.text(control.getBrandName()));
-                footer.$(".esd-block-text").shouldHave(Condition.text(control.getEmail()));
-                footer.$(".esd-block-text").shouldHave(Condition.text(control.getAddress()));
-                footer.$(".esd-block-text").shouldHave(Condition.text(control.getPhone()));
-                preview.shouldHave(Condition.attribute("background-color", control.getGeneralBackgroundColor()));
-                header.shouldHave(Condition.attribute("background-color", control.getHeaderColor()));
-                footer.shouldHave(Condition.attribute("background-color", control.getFooterColor()));
-                preview.find("button").shouldHave(Condition.attribute("background-color", control.getButtonColor()));
-                preview.$$("p").shouldHave(CollectionCondition.allMatch("text", element -> element.getCssValue("color").equals(control.getFontColor())));
-                preview.$$("a").shouldHave(CollectionCondition.allMatch("link", element -> element.getCssValue("color").equals(control.getLinkColor())));
-            });
-            return this;
-        }
+    public PreviewComponent checkPreviewText(SelenideElement element, String expectedText) {
+        doInTemplatePreviewFrame(() -> {
+            System.out.println(element.getText());
+        });
+        return this;
+    }
     }
 
     public TemplateGeneratorPage setSiteUrl(String siteUrl) {
