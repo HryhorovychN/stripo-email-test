@@ -8167,3 +8167,5 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {"
 2022-12-03 13:49:24,834 INFO  Test articleShouldPublishSuccessfully passed 
 2022-12-03 13:49:24,835 INFO  Test case: articleShouldBeDelete running 
 2022-12-03 13:49:27,593 INFO  Test articleShouldBeDelete passed 
+2022-12-05 19:05:12,549 INFO  Remote browser is starting 
+2022-12-05 19:50:53,871 ERROR Connection status: https://staging.stripo.email/ Bad Gateway 
