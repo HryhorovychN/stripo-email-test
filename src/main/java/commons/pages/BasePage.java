@@ -34,7 +34,7 @@ public class BasePage extends FrameAction {
     }
 
     protected <T> T checkTitlePage(String expectedTitle, Class<T> classToReturn) {
-        sleep(2000);
+        sleep(2500);
         String currentTitle = Selenide.title();
         Assert.assertEquals(currentTitle, expectedTitle);
         return page(classToReturn);
