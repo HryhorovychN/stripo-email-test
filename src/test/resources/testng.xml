@@ -18,6 +18,7 @@
             <class name="NewEditorTest" />
             <class name="TemplateTest" />
             <class name="PricingPageTest" />
+            <class name="TemplateGeneratorTest" />
         </classes>
     </test>
 
