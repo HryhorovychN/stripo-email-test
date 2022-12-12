@@ -39,11 +39,6 @@ public class Driver {
         }
     }
 
-    public static Object executeJS(String script) {
-        JavascriptExecutor js = (JavascriptExecutor) getWebDriver();
-        return js.executeScript(script);
-    }
-
     public static void waitForUrlContains(String urlChunk) {
         WebDriverWait wait = new WebDriverWait(currentDriver(), 10);
         wait.until(ExpectedConditions.urlContains(urlChunk));

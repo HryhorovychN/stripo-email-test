@@ -8,6 +8,7 @@
     </listeners>
     <parameter name="BROWSER" value="${BROWSER}"/>
     <test name="Site Tests" parallel="methods" thread-count="5" >
+<!--    <test name="Site Tests">-->
         <classes>
             <class name="BlogTest" />
             <class name="AmpExampleTest" />
